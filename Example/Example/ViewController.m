@@ -41,28 +41,28 @@ static NSString *identifier = @"MenuSectionHeaderView";
         
         switch (i) {
             case 0:
-                section.title = @"Burger";
+                section.title = @"Option 1";
                 section.isVisible = @YES;
                 section.items = @[[NSNull null], [NSNull null], [NSNull null]];
                 break;
                 
             case 1:
-                section.title = @"Sandwhiches";
+                section.title = @"Option 2";
                 section.items = @[[NSNull null], [NSNull null], [NSNull null], [NSNull null], [NSNull null], [NSNull null]];
                 break;
                 
             case 2:
-                section.title = @"Salads";
+                section.title = @"Option 3";
                 section.items = @[[NSNull null], [NSNull null], [NSNull null]];
                 break;
                 
             case 3:
-                section.title = @"Wraps";
+                section.title = @"Option 4";
                 section.items = @[[NSNull null], [NSNull null]];
                 break;
                 
             case 4:
-                section.title = @"Wings";
+                section.title = @"Option 5";
                 section.items = @[[NSNull null], [NSNull null], [NSNull null], [NSNull null]];
                 break;
                 
