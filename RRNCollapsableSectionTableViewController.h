@@ -10,10 +10,13 @@
 
 @interface RRNCollapsableTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, RRNCollapsableSectionHeaderReactiveProtocol>
 
+//Override required
 -(NSArray *)model;
--(BOOL)singleOpenSelectionOnly;
 -(UITableView *)collapsableTableView;
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+-(NSString *)sectionHeaderReuseIdentifier;
+
+//Override optional
 -(void)userTapped:(UIView <RRNCollapsableSectionHeaderProtocol> *)view;
+-(BOOL)singleOpenSelectionOnly;
 
 @end
