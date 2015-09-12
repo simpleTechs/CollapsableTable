@@ -48,7 +48,7 @@
     
     id <RRNCollapsableSectionItemProtocol> menuSection = [[self model] objectAtIndex:section];
     
-    UIView <RRNCollapsableSectionHeaderProtocol> *view = (UIView <RRNCollapsableSectionHeaderProtocol> *)[tableView dequeueReusableHeaderFooterViewWithIdentifier:@"MenuSectionHeaderViewID"];
+    UIView <RRNCollapsableSectionHeaderProtocol> *view = (UIView <RRNCollapsableSectionHeaderProtocol> *)[tableView dequeueReusableHeaderFooterViewWithIdentifier:[self sectionHeaderReuseIdentifier]];
     view.interactionDelegate = self;
     view.tag = section;
     view.titleLabel.text = menuSection.title;
@@ -74,7 +74,7 @@
 
 #pragma mark - ReactiveSectionHeaderProtocol
 
--(void)userTapped:(UIView <RRNCollapsableSectionHeaderProtocol> *)view {
+-(void)userTapped:(UIView *)view {
     
     UITableView *tableView = [self collapsableTableView];
     
@@ -94,7 +94,9 @@
             
             menuSection.isVisible = @NO;
             
-            [view closeAnimated:YES];
+            if ([view conformsToProtocol:@protocol(RRNCollapsableSectionHeaderProtocol)]) {
+                [((id <RRNCollapsableSectionHeaderProtocol>)view) closeAnimated:YES];
+            }
             
             NSInteger section = view.tag;
             
@@ -108,7 +110,9 @@
             
             menuSection.isVisible = @YES;
             
-            [view openAnimated:YES];
+            if ([view conformsToProtocol:@protocol(RRNCollapsableSectionHeaderProtocol)]) {
+                [((id <RRNCollapsableSectionHeaderProtocol>)view) openAnimated:YES];
+            }
             
             NSInteger section = view.tag;
             
@@ -126,9 +130,11 @@
             
             NSInteger section = [menu indexOfObject:menuSection];
             
-            UIView <RRNCollapsableSectionHeaderProtocol> *headerView = (UIView <RRNCollapsableSectionHeaderProtocol> *)[tableView headerViewForSection:section];
+            UIView *headerView = [tableView headerViewForSection:section];
             
-            [headerView closeAnimated:YES];
+            if ([headerView conformsToProtocol:@protocol(RRNCollapsableSectionHeaderProtocol)]) {
+                [((id <RRNCollapsableSectionHeaderProtocol>)headerView) closeAnimated:YES];
+            }
             
             NSArray *indexPaths = [self indexPathsForSection:section
                                               forMenuSection:menuSection];
