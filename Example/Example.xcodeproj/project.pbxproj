@@ -31,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		509292431BA4402F003F72D7 /* RRNCollapsableSectionHeaderReactiveProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRNCollapsableSectionHeaderReactiveProtocol.h; sourceTree = "<group>"; };
 		50E4BAC51B9E8D72002488A6 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E4BAC91B9E8D72002488A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50E4BACA1B9E8D72002488A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,6 +74,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		509292441BA44056003F72D7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				509292431BA4402F003F72D7 /* RRNCollapsableSectionHeaderReactiveProtocol.h */,
+				50E4BAF31B9E8FA7002488A6 /* RRNCollapsableSectionHeaderProtocol.h */,
+				50E4BAF41B9E8FA7002488A6 /* RRNCollapsableSectionItemProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		509292451BA4405E003F72D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50E4BAF51B9E8FA7002488A6 /* RRNCollapsableSectionTableViewController.h */,
+				50E4BAF61B9E8FA7002488A6 /* RRNCollapsableSectionTableViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		50E4BABC1B9E8D72002488A6 = {
 			isa = PBXGroup;
 			children = (
@@ -141,10 +161,8 @@
 		50E4BAF81B9E9031002488A6 /* RRNCollapsableSectionTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				50E4BAF31B9E8FA7002488A6 /* RRNCollapsableSectionHeaderProtocol.h */,
-				50E4BAF41B9E8FA7002488A6 /* RRNCollapsableSectionItemProtocol.h */,
-				50E4BAF51B9E8FA7002488A6 /* RRNCollapsableSectionTableViewController.h */,
-				50E4BAF61B9E8FA7002488A6 /* RRNCollapsableSectionTableViewController.m */,
+				509292441BA44056003F72D7 /* Protocols */,
+				509292451BA4405E003F72D7 /* Controller */,
 			);
 			name = RRNCollapsableSectionTableViewController;
 			sourceTree = "<group>";
@@ -452,6 +470,7 @@
 				50E4BAEA1B9E8D72002488A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50E4BAEB1B9E8D72002488A6 /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +479,7 @@
 				50E4BAED1B9E8D72002488A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
