@@ -33,6 +33,10 @@
     return NO;
 }
 
+-(NSString *)sectionHeaderReuseIdentifier {
+    return nil;
+}
+
 #pragma mark - UITableView
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
