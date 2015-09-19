@@ -18,7 +18,8 @@ Subclass RRNCollapsableTableViewController and do the following inside your subc
 	- Register your section header view with your table view
 	- override 'collapsableTableView' and return your table view
 	- override 'model' and return an array of objects that confrom to RRNCollapsableSectionItemProtocol. Make sure this array is assembled once only.
-	- override 'sectionHeaderReuseIdentifier' and return a reuse idnetifier for your registered section header view.
+	- override 'sectionHeaderNibName' and return the filename of your nib.
+	
 	- override 'heightForRowAtIndexPath' and return a value.
 	- override 'heightForHeaderInSection' and return a value.
 	- override 'cellForRowAtIndexPath' and return a cell;
