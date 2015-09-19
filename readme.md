@@ -16,15 +16,11 @@ Build a section header by subclassing UITableViewHeaderFooterView. Your section 
 Subclass RRNCollapsableTableViewController and do the following inside your subclass:
 
 	- override 'collapsableTableView' and return your table view
-	- override 'model' and return an array of objects that confrom to RRNCollapsableSectionItemProtocol. Make sure this array is assembled once only.
-	- override 'sectionHeaderNibName' and return the filename of your nib.
-	
-	- override 'heightForRowAtIndexPath' and return a value.
-	- override 'heightForHeaderInSection' and return a value.
-	- override 'cellForRowAtIndexPath' and return a cell;
+	- override 'model' and return an array of objects, each of which conforms to RRNCollapsableSectionItemProtocol. Make sure this array is assembled once only.
+	- override 'sectionHeaderNibName' and return the filename of your nib file that your using.
 
-See the example project for details.
+See the 'Example' project for a demonstration.
 
 ## License
 
-RRNCollapsableSectionTableViewController is released under the MIT license. See LICENSE for details.
+RRNCollapsableSectionTableViewController is released under the MIT license. See 'Licence.md' for details.
