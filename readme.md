@@ -13,10 +13,9 @@ XCode 6.4+, iOS 8.1
 
 ## Usage
 
-Build a UITableView, either in code or from interface builder.
-Build a section header by subclassing UITableViewHeaderFooterView. Your section header must conform to the RRNCollapsableSectionHeader Protocol
-
-Subclass RRNCollapsableTableViewController and do the following inside your subclass:
+1) Build a UITableView, either in code or from interface builder.
+2) Build a section header by subclassing UITableViewHeaderFooterView. Your section header must conform to the RRNCollapsableSectionHeader Protocol
+3) Subclass RRNCollapsableTableViewController and do the following inside your subclass:
 
 	- override 'collapsableTableView' and return your table view
 	- override 'model' and return an array of objects, each of which conforms to RRNCollapsableSectionItemProtocol. Make sure this array is assembled once only.
