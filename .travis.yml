@@ -1,5 +1,4 @@
 language: objective-c
-osx_image: xcode6.4
-xcode_project: Example.xcodeproj
+xcode_project: Example/Example.xcodeproj
 xcode_scheme: Example
 xcode_sdk: iphonesimulator8.4
