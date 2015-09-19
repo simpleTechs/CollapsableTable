@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rob-nash/RRNCollapsableSectionTableView.svg?branch=master)](https://travis-ci.org/rob-nash/RRNCollapsableSectionTableView)
+
 ## Installation
 
 Drag each file prefixed with 'RRN', into your project.
