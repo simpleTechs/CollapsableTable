@@ -3,5 +3,3 @@ osx_image: xcode6.4
 xcode_project: Example.xcodeproj
 xcode_scheme: Example
 xcode_sdk: iphonesimulator8.4
-script:
-	- xctool -project Example.xcodeproj -scheme Example -sdk iphonesimulator8.4 build test
