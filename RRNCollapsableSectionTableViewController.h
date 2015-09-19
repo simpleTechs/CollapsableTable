@@ -13,7 +13,7 @@
 //Override required
 -(NSArray *)model;
 -(UITableView *)collapsableTableView;
--(NSString *)sectionHeaderReuseIdentifier;
+-(NSString *)sectionHeaderNibName;
 
 //Override optional
 -(void)userTapped:(UIView <RRNCollapsableSectionHeaderProtocol> *)view;
