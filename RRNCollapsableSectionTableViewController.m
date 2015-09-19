@@ -17,8 +17,8 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     
-    UINib *nib = [UINib nibWithNibName:@"MenuSectionHeaderView" bundle:nil];
-    [[self collapsableTableView] registerNib:nib forHeaderFooterViewReuseIdentifier:@"MenuSectionHeaderViewID"];
+    UINib *nib = [UINib nibWithNibName:[self sectionHeaderNibName] bundle:nil];
+    [[self collapsableTableView] registerNib:nib forHeaderFooterViewReuseIdentifier:[self sectionHeaderReuseIdentifier]];
 }
 
 -(UITableView *)collapsableTableView {
@@ -33,8 +33,12 @@
     return NO;
 }
 
--(NSString *)sectionHeaderReuseIdentifier {
+-(NSString *)sectionHeaderNibName {
     return nil;
+}
+
+-(NSString *)sectionHeaderReuseIdentifier {
+    return [[self sectionHeaderNibName] stringByAppendingString:@"ID"];
 }
 
 #pragma mark - UITableView
@@ -44,31 +48,44 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    id <RRNCollapsableSectionItemProtocol> menuSection = [[self model] objectAtIndex:section];
-    return (menuSection.isVisible.boolValue) ? menuSection.items.count : 0;
+    id menuSection = [[self model] objectAtIndex:section];
+    BOOL itemConforms = [menuSection conformsToProtocol:@protocol(RRNCollapsableSectionItemProtocol)];
+    return (itemConforms && ((id <RRNCollapsableSectionItemProtocol>)menuSection).isVisible.boolValue) ? ((id <RRNCollapsableSectionItemProtocol>)menuSection).items.count : 0;
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
-    id <RRNCollapsableSectionItemProtocol> menuSection = [[self model] objectAtIndex:section];
+    id menuSection = [[self model] objectAtIndex:section];
     
-    UIView <RRNCollapsableSectionHeaderProtocol> *view = (UIView <RRNCollapsableSectionHeaderProtocol> *)[tableView dequeueReusableHeaderFooterViewWithIdentifier:[self sectionHeaderReuseIdentifier]];
-    view.interactionDelegate = self;
+    UIView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[self sectionHeaderReuseIdentifier]];
     view.tag = section;
-    view.titleLabel.text = menuSection.title;
+    
+    BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableSectionHeaderProtocol)];
+    
+    if (headerConforms) {
+        ((id <RRNCollapsableSectionHeaderProtocol>)view).interactionDelegate = self;
+    }
+    
+    BOOL itemConforms = [menuSection conformsToProtocol:@protocol(RRNCollapsableSectionItemProtocol)];
+    
+    if (headerConforms && itemConforms) {
+        ((id <RRNCollapsableSectionHeaderProtocol>)view).titleLabel.text = ((id <RRNCollapsableSectionItemProtocol>)menuSection).title;
+    }
+    
     return view;
 }
 
 -(void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
     
-    id <RRNCollapsableSectionItemProtocol> menuSection = [[self model] objectAtIndex:section];
+    id menuSection = [[self model] objectAtIndex:section];
     
-    id <RRNCollapsableSectionHeaderProtocol> sectionView = (id <RRNCollapsableSectionHeaderProtocol>)view;
+    BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableSectionHeaderProtocol)];
+    BOOL itemConforms = [menuSection conformsToProtocol:@protocol(RRNCollapsableSectionItemProtocol)];
     
-    if (menuSection.isVisible.boolValue) {
-        [sectionView openAnimated:NO];
-    } else {
-        [sectionView closeAnimated:NO];
+    if (headerConforms && itemConforms && ((id <RRNCollapsableSectionItemProtocol>)menuSection).isVisible.boolValue) {
+        [((id <RRNCollapsableSectionHeaderProtocol>)view) openAnimated:NO];
+    } else if (headerConforms) {
+        [((id <RRNCollapsableSectionHeaderProtocol>)view) closeAnimated:NO];
     }
 }
 
@@ -90,6 +107,10 @@
     
     for (id <RRNCollapsableSectionItemProtocol> menuSection in menu) {
         
+        if (![menuSection conformsToProtocol:@protocol(RRNCollapsableSectionItemProtocol)]) {
+            continue;
+        }
+             
         BOOL chosenMenuSection = menuSection == [menu objectAtIndex:view.tag];
         
         BOOL isVisible = menuSection.isVisible.boolValue;
@@ -98,7 +119,9 @@
             
             menuSection.isVisible = @NO;
             
-            if ([view conformsToProtocol:@protocol(RRNCollapsableSectionHeaderProtocol)]) {
+            BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableSectionHeaderProtocol)];
+            
+            if (headerConforms) {
                 [((id <RRNCollapsableSectionHeaderProtocol>)view) closeAnimated:YES];
             }
             
@@ -114,7 +137,9 @@
             
             menuSection.isVisible = @YES;
             
-            if ([view conformsToProtocol:@protocol(RRNCollapsableSectionHeaderProtocol)]) {
+            BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableSectionHeaderProtocol)];
+            
+            if (headerConforms) {
                 [((id <RRNCollapsableSectionHeaderProtocol>)view) openAnimated:YES];
             }
             
@@ -136,7 +161,9 @@
             
             UIView *headerView = [tableView headerViewForSection:section];
             
-            if ([headerView conformsToProtocol:@protocol(RRNCollapsableSectionHeaderProtocol)]) {
+            BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableSectionHeaderProtocol)];
+            
+            if (headerConforms) {
                 [((id <RRNCollapsableSectionHeaderProtocol>)headerView) closeAnimated:YES];
             }
             

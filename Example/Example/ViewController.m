@@ -15,8 +15,6 @@
 
 @implementation ViewController
 
-static NSString *sectionHeaderIdentifier = @"MenuSectionHeaderView";
-
 -(NSArray *)menu {
     if (_menu == nil) {
         _menu = [FakeModelBuilder buildMenu];
@@ -26,8 +24,8 @@ static NSString *sectionHeaderIdentifier = @"MenuSectionHeaderView";
 
 #pragma mark - RRNCollapsableTableView
 
--(NSString *)sectionHeaderReuseIdentifier {
-    return sectionHeaderIdentifier;
+-(NSString *)sectionHeaderNibName {
+    return @"MenuSectionHeaderView";
 }
 
 -(NSArray *)model {
