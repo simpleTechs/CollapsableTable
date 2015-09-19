@@ -33,7 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		509292431BA4402F003F72D7 /* RRNCollapsableSectionHeaderReactiveProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRNCollapsableSectionHeaderReactiveProtocol.h; sourceTree = "<group>"; };
+		509292431BA4402F003F72D7 /* RRNCollapsableSectionHeaderReactiveProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RRNCollapsableSectionHeaderReactiveProtocol.h; path = ../../RRNCollapsableSectionHeaderReactiveProtocol.h; sourceTree = "<group>"; };
 		50AB33D81BAD7D1A0087FDAB /* FakeModelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeModelBuilder.h; sourceTree = "<group>"; };
 		50AB33D91BAD7D1A0087FDAB /* FakeModelBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeModelBuilder.m; sourceTree = "<group>"; };
 		50E4BAC51B9E8D72002488A6 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,10 +49,10 @@
 		50E4BADE1B9E8D72002488A6 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E4BAE31B9E8D72002488A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50E4BAE41B9E8D72002488A6 /* ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
-		50E4BAF31B9E8FA7002488A6 /* RRNCollapsableSectionHeaderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRNCollapsableSectionHeaderProtocol.h; sourceTree = "<group>"; };
-		50E4BAF41B9E8FA7002488A6 /* RRNCollapsableSectionItemProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRNCollapsableSectionItemProtocol.h; sourceTree = "<group>"; };
-		50E4BAF51B9E8FA7002488A6 /* RRNCollapsableSectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRNCollapsableSectionTableViewController.h; sourceTree = "<group>"; };
-		50E4BAF61B9E8FA7002488A6 /* RRNCollapsableSectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRNCollapsableSectionTableViewController.m; sourceTree = "<group>"; };
+		50E4BAF31B9E8FA7002488A6 /* RRNCollapsableSectionHeaderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRNCollapsableSectionHeaderProtocol.h; path = ../../RRNCollapsableSectionHeaderProtocol.h; sourceTree = "<group>"; };
+		50E4BAF41B9E8FA7002488A6 /* RRNCollapsableSectionItemProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRNCollapsableSectionItemProtocol.h; path = ../../RRNCollapsableSectionItemProtocol.h; sourceTree = "<group>"; };
+		50E4BAF51B9E8FA7002488A6 /* RRNCollapsableSectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRNCollapsableSectionTableViewController.h; path = ../../RRNCollapsableSectionTableViewController.h; sourceTree = "<group>"; };
+		50E4BAF61B9E8FA7002488A6 /* RRNCollapsableSectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRNCollapsableSectionTableViewController.m; path = ../../RRNCollapsableSectionTableViewController.m; sourceTree = "<group>"; };
 		50E4BAF91B9E908C002488A6 /* MenuSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuSection.h; sourceTree = "<group>"; };
 		50E4BAFA1B9E908C002488A6 /* MenuSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuSection.m; sourceTree = "<group>"; };
 		50E4BAFC1B9E90E3002488A6 /* MenuSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuSectionHeaderView.h; sourceTree = "<group>"; };
