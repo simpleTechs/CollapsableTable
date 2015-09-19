@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50AB33DA1BAD7D1A0087FDAB /* FakeModelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB33D91BAD7D1A0087FDAB /* FakeModelBuilder.m */; settings = {ASSET_TAGS = (); }; };
 		50E4BACB1B9E8D72002488A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E4BACA1B9E8D72002488A6 /* main.m */; };
 		50E4BACE1B9E8D72002488A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E4BACD1B9E8D72002488A6 /* AppDelegate.m */; };
 		50E4BAD11B9E8D72002488A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E4BAD01B9E8D72002488A6 /* ViewController.m */; };
@@ -32,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		509292431BA4402F003F72D7 /* RRNCollapsableSectionHeaderReactiveProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRNCollapsableSectionHeaderReactiveProtocol.h; sourceTree = "<group>"; };
+		50AB33D81BAD7D1A0087FDAB /* FakeModelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeModelBuilder.h; sourceTree = "<group>"; };
+		50AB33D91BAD7D1A0087FDAB /* FakeModelBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeModelBuilder.m; sourceTree = "<group>"; };
 		50E4BAC51B9E8D72002488A6 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E4BAC91B9E8D72002488A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50E4BACA1B9E8D72002488A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +96,68 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		50AB33DB1BAD7D1D0087FDAB /* FakeModelBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				50AB33D81BAD7D1A0087FDAB /* FakeModelBuilder.h */,
+				50AB33D91BAD7D1A0087FDAB /* FakeModelBuilder.m */,
+			);
+			name = FakeModelBuilder;
+			sourceTree = "<group>";
+		};
+		50AB33DC1BAD7E2A0087FDAB /* MenuSectionHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				50E4BAFC1B9E90E3002488A6 /* MenuSectionHeaderView.h */,
+				50E4BAFD1B9E90E3002488A6 /* MenuSectionHeaderView.m */,
+				50E4BAFE1B9E90E3002488A6 /* MenuSectionHeaderView.xib */,
+			);
+			name = MenuSectionHeaderView;
+			sourceTree = "<group>";
+		};
+		50AB33DD1BAD7E300087FDAB /* MenuSection */ = {
+			isa = PBXGroup;
+			children = (
+				50E4BAF91B9E908C002488A6 /* MenuSection.h */,
+				50E4BAFA1B9E908C002488A6 /* MenuSection.m */,
+			);
+			name = MenuSection;
+			sourceTree = "<group>";
+		};
+		50AB33DE1BAD7E370087FDAB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				50E4BACF1B9E8D72002488A6 /* ViewController.h */,
+				50E4BAD01B9E8D72002488A6 /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		50AB33DF1BAD7E720087FDAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50AB33DD1BAD7E300087FDAB /* MenuSection */,
+				50AB33DB1BAD7D1D0087FDAB /* FakeModelBuilder */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		50AB33E01BAD7E770087FDAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50AB33DC1BAD7E2A0087FDAB /* MenuSectionHeaderView */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		50AB33E11BAD7E7F0087FDAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50AB33DE1BAD7E370087FDAB /* ViewController */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		50E4BABC1B9E8D72002488A6 = {
 			isa = PBXGroup;
 			children = (
@@ -114,19 +179,11 @@
 		50E4BAC71B9E8D72002488A6 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				50E4BACC1B9E8D72002488A6 /* AppDelegate.h */,
-				50E4BACD1B9E8D72002488A6 /* AppDelegate.m */,
-				50E4BAF81B9E9031002488A6 /* RRNCollapsableSectionTableViewController */,
-				50E4BACF1B9E8D72002488A6 /* ViewController.h */,
-				50E4BAD01B9E8D72002488A6 /* ViewController.m */,
-				50E4BAF91B9E908C002488A6 /* MenuSection.h */,
-				50E4BAFA1B9E908C002488A6 /* MenuSection.m */,
-				50E4BAFC1B9E90E3002488A6 /* MenuSectionHeaderView.h */,
-				50E4BAFD1B9E90E3002488A6 /* MenuSectionHeaderView.m */,
-				50E4BAFE1B9E90E3002488A6 /* MenuSectionHeaderView.xib */,
 				50E4BAD21B9E8D72002488A6 /* Main.storyboard */,
-				50E4BAD51B9E8D72002488A6 /* Images.xcassets */,
-				50E4BAD71B9E8D72002488A6 /* LaunchScreen.xib */,
+				50AB33DF1BAD7E720087FDAB /* Model */,
+				50AB33E01BAD7E770087FDAB /* View */,
+				50AB33E11BAD7E7F0087FDAB /* Controller */,
+				50E4BAF81B9E9031002488A6 /* RRNCollapsableSectionTableViewController */,
 				50E4BAC81B9E8D72002488A6 /* Supporting Files */,
 			);
 			path = Example;
@@ -135,6 +192,10 @@
 		50E4BAC81B9E8D72002488A6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				50E4BACC1B9E8D72002488A6 /* AppDelegate.h */,
+				50E4BACD1B9E8D72002488A6 /* AppDelegate.m */,
+				50E4BAD51B9E8D72002488A6 /* Images.xcassets */,
+				50E4BAD71B9E8D72002488A6 /* LaunchScreen.xib */,
 				50E4BAC91B9E8D72002488A6 /* Info.plist */,
 				50E4BACA1B9E8D72002488A6 /* main.m */,
 			);
@@ -211,7 +272,7 @@
 		50E4BABD1B9E8D72002488A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Robert Nash";
 				TargetAttributes = {
 					50E4BAC41B9E8D72002488A6 = {
@@ -272,6 +333,7 @@
 				50E4BAD11B9E8D72002488A6 /* ViewController.m in Sources */,
 				50E4BAFF1B9E90E3002488A6 /* MenuSectionHeaderView.m in Sources */,
 				50E4BAF71B9E8FA7002488A6 /* RRNCollapsableSectionTableViewController.m in Sources */,
+				50AB33DA1BAD7D1A0087FDAB /* FakeModelBuilder.m in Sources */,
 				50E4BACE1B9E8D72002488A6 /* AppDelegate.m in Sources */,
 				50E4BACB1B9E8D72002488A6 /* main.m in Sources */,
 			);
@@ -336,6 +398,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -403,6 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertnash.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -413,6 +477,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertnash.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -431,6 +496,7 @@
 				);
 				INFOPLIST_FILE = ExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertnash.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};
@@ -446,6 +512,7 @@
 				);
 				INFOPLIST_FILE = ExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertnash.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};

@@ -9,6 +9,5 @@
 #import "RRNCollapsableSectionTableViewController.h"
 
 @interface ViewController : RRNCollapsableTableViewController
-
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
-

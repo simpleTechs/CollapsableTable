@@ -9,16 +9,13 @@
 #import "RRNCollapsableSectionTableViewController.h"
 #import "RRNCollapsableSectionItemProtocol.h"
 
-@interface RRNCollapsableTableViewController ()
-@end
-
 @implementation RRNCollapsableTableViewController
 
 -(void)viewDidLoad {
     [super viewDidLoad];
     
-    UINib *nib = [UINib nibWithNibName:@"MenuSectionHeaderView" bundle:nil];
-    [[self collapsableTableView] registerNib:nib forHeaderFooterViewReuseIdentifier:@"MenuSectionHeaderViewID"];
+    UINib *nib = [UINib nibWithNibName:[self sectionHeaderReuseIdentifier] bundle:nil];
+    [[self collapsableTableView] registerNib:nib forHeaderFooterViewReuseIdentifier:[self sectionHeaderReuseIdentifier]];
 }
 
 -(UITableView *)collapsableTableView {
@@ -155,11 +152,8 @@
 
 -(NSArray *)indexPathsForSection:(NSInteger)section forMenuSection:(id <RRNCollapsableSectionItemProtocol>)menuSection {
     NSMutableArray *collector = [NSMutableArray new];
-    NSInteger count = menuSection.items.count;
-    NSIndexPath *indexPath;
-    for (NSInteger i = 0; i < count; i++) {
-        indexPath = [NSIndexPath indexPathForRow:i inSection:section];
-        [collector addObject:indexPath];
+    for (NSInteger i = 0; i < menuSection.items.count; i++) {
+        [collector addObject:[NSIndexPath indexPathForRow:i inSection:section]];
     }
     return [collector copy];
 }

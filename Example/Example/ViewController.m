@@ -7,73 +7,27 @@
 //
 
 #import "ViewController.h"
-#import "MenuSection.h"
+#import "FakeModelBuilder.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *menu;
 @end
 
 @implementation ViewController
 
-static NSString *identifier = @"MenuSectionHeaderView";
+static NSString *sectionHeaderIdentifier = @"MenuSectionHeaderView";
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    UINib *nib = [UINib nibWithNibName:identifier bundle:nil];
-    [self.tableView registerNib:nib forHeaderFooterViewReuseIdentifier:identifier];
-    
-    self.menu = [self buildMenu];
+-(NSArray *)menu {
+    if (_menu == nil) {
+        _menu = [FakeModelBuilder buildMenu];
+    }
+    return _menu;
 }
+
+#pragma mark - RRNCollapsableTableView
 
 -(NSString *)sectionHeaderReuseIdentifier {
-    return identifier;
-}
-
--(NSArray *)buildMenu {
-    
-    NSMutableArray *collector = [NSMutableArray new];
-    
-    for (NSInteger i = 0; i < 5; i++) {
-        
-        MenuSection *section = [MenuSection new];
-        
-        switch (i) {
-            case 0:
-                section.title = @"Option 1";
-                section.isVisible = @YES;
-                section.items = @[[NSNull null], [NSNull null], [NSNull null]];
-                break;
-                
-            case 1:
-                section.title = @"Option 2";
-                section.items = @[[NSNull null], [NSNull null], [NSNull null], [NSNull null], [NSNull null], [NSNull null]];
-                break;
-                
-            case 2:
-                section.title = @"Option 3";
-                section.items = @[[NSNull null], [NSNull null], [NSNull null]];
-                break;
-                
-            case 3:
-                section.title = @"Option 4";
-                section.items = @[[NSNull null], [NSNull null]];
-                break;
-                
-            case 4:
-                section.title = @"Option 5";
-                section.items = @[[NSNull null], [NSNull null], [NSNull null], [NSNull null]];
-                break;
-                
-            default:
-                break;
-        }
-        
-        [collector addObject:section];
-    }
-    
-    return [collector copy];
+    return sectionHeaderIdentifier;
 }
 
 -(NSArray *)model {
@@ -82,10 +36,6 @@ static NSString *identifier = @"MenuSectionHeaderView";
 
 -(UITableView *)collapsableTableView {
     return self.tableView;
-}
-
--(BOOL)singleOpenSelectionOnly {
-    return NO;
 }
 
 #pragma mark - UITableView
@@ -100,9 +50,8 @@ static NSString *identifier = @"MenuSectionHeaderView";
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    id <RRNCollapsableSectionItemProtocol> mSection = self.menu[indexPath.section];
-    
-    id item = mSection.items[indexPath.row];
+    //id <RRNCollapsableSectionItemProtocol> mSection = self.menu[indexPath.section];
+    //id item = mSection.items[indexPath.row];
     
     return [tableView dequeueReusableCellWithIdentifier:@"Cell"];
 }
