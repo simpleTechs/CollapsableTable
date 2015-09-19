@@ -6,7 +6,7 @@ Drag each file prefixed with 'RRN', into your project.
 
 ## Requirements
 
-XCode 5+, iOS 6+
+XCode 6.4+, iOS 8.1
 
 ## Usage
 
