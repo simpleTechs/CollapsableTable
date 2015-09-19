@@ -6,35 +6,29 @@
 //  Copyright (c) 2015 Robert Nash. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "FakeModelBuilder.h"
 
 @interface ExampleTests : XCTestCase
-
+@property (nonatomic, strong) NSArray *menu;
 @end
 
 @implementation ExampleTests
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.menu = [FakeModelBuilder buildMenu];
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    self.menu = nil;
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testConformanceOfModel {
+    for (id item in self.menu) {
+        XCTAssert([item conformsToProtocol:@protocol(RRNCollapsableSectionItemProtocol)], @"Item must conform to protocol.");
+    }
 }
 
 @end
