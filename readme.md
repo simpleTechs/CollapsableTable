@@ -3,8 +3,10 @@
 ![](http://i.imgur.com/jDq37Ip.gif?1)
 ![](http://i.imgur.com/77YQhPE.gif?1)
 
-## Installation
+## Requirements
+XCode 6.4+, iOS 8.1+
 
+## Installation
 In XCode, select 'Add Files To Project', and select the following
 * RRNCollapsableSectionHeaderProtocol.h
 * RRNCollapsableSectionHeaderReactiveProtocol.h
@@ -12,12 +14,7 @@ In XCode, select 'Add Files To Project', and select the following
 * RRNCollapsableSectionTableViewController.h
 * RRNCollapsableSectionTableViewController.m
 
-## Requirements
-
-XCode 6.4+, iOS 8.1+
-
 ## Usage
-
 1. Build a UITableView, either in code or from interface builder.
 2. Subclass UITableViewHeaderFooterView and conform to the RRNCollapsableSectionHeader Protocol. Create a nib for this subclass.
 3. Subclass RRNCollapsableTableViewController and do the following inside your subclass:
@@ -28,5 +25,4 @@ XCode 6.4+, iOS 8.1+
 See the 'Example' project for a demonstration.
 
 ## License
-
 RRNCollapsableSectionTableViewController is released under the MIT license. See 'Licence.md' for details.
