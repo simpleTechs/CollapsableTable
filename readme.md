@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/rob-nash/RRNCollapsableSectionTableView.svg?branch=master)](https://travis-ci.org/rob-nash/RRNCollapsableSectionTableView)
 
-![](http://imgur.com/jDq37Ip)
-![](http://imgur.com/77YQhPE)
+![](http://i.imgur.com/jDq37Ip.gif?1)
+![](http://i.imgur.com/77YQhPE.gif?1)
 
 ## Installation
 
