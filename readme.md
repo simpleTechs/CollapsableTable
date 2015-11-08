@@ -24,21 +24,5 @@ In XCode, select 'Add Files To Project', and select the following
 
 See the 'Example' project for a demonstration.
 
-## Protocol Descriptions
-
-RRNCollapsableSectionHeaderProtocol states the following:
-* It must be possible to reference a label that has a title for the section
-* It must be possible to reference a delegate that conforms to the RRNCollapsableSectionHeaderReactiveProtocol; to relay user interaction
-* It must be possible to assign the instance to an 'opened' state, specifying wether an animation is permitted, or not.
-* It must be possible to assign the instance to a 'closed' state, specifying wether an animation is permitted, or not.
-
-RRNCollapsableSectionHeaderReactiveProtocol states the following:
-* It must be possible to handle user interaction of a given view.
-
-RRNCollapsableSectionItemProtocol states the following:
-* A title must be provided.
-* A boolean indication that the section should be visible, or not.
-* A collection of items, representing each row in a given section, should be provided.
-
 ## License
 RRNCollapsableSectionTableViewController is released under the MIT license. See 'Licence.md' for details.
