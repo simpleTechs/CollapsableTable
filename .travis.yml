@@ -1,4 +1,4 @@
 language: objective-c
-xcode_project: Example/Example.xcodeproj
+xcode_project: OpenMe.xcworkspace
 xcode_scheme: Example
 xcode_sdk: iphonesimulator
