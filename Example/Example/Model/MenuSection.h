@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Robert Nash. All rights reserved.
 //
 
-#import "RRNCollapsableSectionItemProtocol.h"
+#import <CollapsableTable/CollapsableTable.h>
 
 @interface MenuSection : NSObject <RRNCollapsableSectionItemProtocol>
 @end

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Robert Nash. All rights reserved.
 //
 
-#import "RRNCollapsableSectionHeaderProtocol.h"
+#import <CollapsableTable/CollapsableTable.h>
 
 @interface MenuSectionHeaderView : UITableViewHeaderFooterView <RRNCollapsableSectionHeaderProtocol>
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;

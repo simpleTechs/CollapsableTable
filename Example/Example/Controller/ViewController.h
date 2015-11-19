@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Robert Nash. All rights reserved.
 //
 
-#import "RRNCollapsableSectionTableViewController.h"
+#import <CollapsableTable/CollapsableTable.h>
 
 @interface ViewController : RRNCollapsableTableViewController
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
