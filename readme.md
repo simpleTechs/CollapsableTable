@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/rob-nash/CollapsableTable.svg?branch=master)](https://travis-ci.org/rob-nash/CollapsableTable)
-
 ![](http://i.imgur.com/jDq37Ip.gif?1)
 ![](http://i.imgur.com/77YQhPE.gif?1)
 
