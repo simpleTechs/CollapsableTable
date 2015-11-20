@@ -17,6 +17,7 @@
 		50E4BAD41B9E8D72002488A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E4BAD21B9E8D72002488A6 /* Main.storyboard */; };
 		50E4BAD61B9E8D72002488A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E4BAD51B9E8D72002488A6 /* Images.xcassets */; };
 		50E4BAD91B9E8D72002488A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E4BAD71B9E8D72002488A6 /* LaunchScreen.xib */; };
+		C95B176A1BFEA99C009ADEDF /* CollapsableTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95B17691BFEA99C009ADEDF /* CollapsableTable.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		50E4BAD31B9E8D72002488A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50E4BAD51B9E8D72002488A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		50E4BAD81B9E8D72002488A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C95B17691BFEA99C009ADEDF /* CollapsableTable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CollapsableTable.framework; path = "../../../../Library/Developer/Xcode/DerivedData/OpenMe-cipkrxprjbbxrqdirhbjgmbltgpv/Build/Products/Debug-iphoneos/CollapsableTable.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95B176A1BFEA99C009ADEDF /* CollapsableTable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +134,7 @@
 		50E4BAC71B9E8D72002488A6 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				C95B17691BFEA99C009ADEDF /* CollapsableTable.framework */,
 				50E4BAD21B9E8D72002488A6 /* Main.storyboard */,
 				50AB33DF1BAD7E720087FDAB /* Model */,
 				50AB33E01BAD7E770087FDAB /* View */,

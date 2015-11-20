@@ -8,5 +8,5 @@
 
 #import <CollapsableTable/CollapsableTable.h>
 
-@interface MenuSection : NSObject <RRNCollapsableSectionItemProtocol>
+@interface MenuSection : NSObject <RRNCollapsableTableViewSectionModelProtocol>
 @end

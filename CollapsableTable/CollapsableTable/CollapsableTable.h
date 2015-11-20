@@ -6,10 +6,10 @@
 //  Copyright © 2015 Robert Nash. All rights reserved.
 //
 
-#import <CollapsableTable/RRNCollapsableSectionHeaderProtocol.h>
-#import <CollapsableTable/RRNCollapsableSectionHeaderReactiveProtocol.h>
-#import <CollapsableTable/RRNCollapsableSectionItemProtocol.h>
-#import <CollapsableTable/RRNCollapsableSectionTableViewController.h>
+#import <CollapsableTable/RRNCollapsableTableViewSectionHeaderProtocol.h>
+#import <CollapsableTable/RRNCollapsableTableViewSectionHeaderInteractionProtocol.h>
+#import <CollapsableTable/RRNCollapsableTableViewSectionModelProtocol.h>
+#import <CollapsableTable/RRNCollapsableTableViewController.h>
 
 //! Project version number for CollapsableTable.
 FOUNDATION_EXPORT double CollapsableTableVersionNumber;

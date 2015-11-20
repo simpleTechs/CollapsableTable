@@ -22,7 +22,10 @@ In XCode, select 'Add Files To Project', and select the following
 	* override 'model' and return a pointer to an array of objects, which conform to RRNCollapsableSectionItem Protocol.
 	* override 'sectionHeaderNibName' and return the filename of the nib you created in step 2.
 
-See the 'Example' project for a demonstration.
+Try the Demo by running the 'Example' scheme in the 'OpenMe' workspace.
+
+## Upcoming
+* Carthage support
 
 ## License
 RRNCollapsableSectionTableViewController is released under the MIT license. See 'Licence.md' for details.

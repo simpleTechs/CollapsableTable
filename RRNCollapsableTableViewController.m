@@ -1,13 +1,13 @@
 //
 //  RRNCollapsableTableViewController.m
-//  RRNCollapsableSectionTableView
+//  CollapsableTable
 //
 //  Created by Robert Nash on 08/09/2015.
 //  Copyright (c) 2015 Robert Nash. All rights reserved.
 //
 
-#import "RRNCollapsableSectionTableViewController.h"
-#import "RRNCollapsableSectionItemProtocol.h"
+#import "RRNCollapsableTableViewController.h"
+#import "RRNCollapsableTableViewSectionModelProtocol.h"
 
 @interface RRNCollapsableTableViewController ()
 @end
@@ -49,8 +49,8 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     id menuSection = [[self model] objectAtIndex:section];
-    BOOL itemConforms = [menuSection conformsToProtocol:@protocol(RRNCollapsableSectionItemProtocol)];
-    return (itemConforms && ((id <RRNCollapsableSectionItemProtocol>)menuSection).isVisible.boolValue) ? ((id <RRNCollapsableSectionItemProtocol>)menuSection).items.count : 0;
+    BOOL itemConforms = [menuSection conformsToProtocol:@protocol(RRNCollapsableTableViewSectionModelProtocol)];
+    return (itemConforms && ((id <RRNCollapsableTableViewSectionModelProtocol>)menuSection).isVisible.boolValue) ? ((id <RRNCollapsableTableViewSectionModelProtocol>)menuSection).items.count : 0;
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
@@ -60,16 +60,16 @@
     UIView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[self sectionHeaderReuseIdentifier]];
     view.tag = section;
     
-    BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableSectionHeaderProtocol)];
+    BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableTableViewSectionHeaderProtocol)];
     
     if (headerConforms) {
-        ((id <RRNCollapsableSectionHeaderProtocol>)view).interactionDelegate = self;
+        ((id <RRNCollapsableTableViewSectionHeaderProtocol>)view).interactionDelegate = self;
     }
     
-    BOOL itemConforms = [menuSection conformsToProtocol:@protocol(RRNCollapsableSectionItemProtocol)];
+    BOOL itemConforms = [menuSection conformsToProtocol:@protocol(RRNCollapsableTableViewSectionModelProtocol)];
     
     if (headerConforms && itemConforms) {
-        ((id <RRNCollapsableSectionHeaderProtocol>)view).titleLabel.text = ((id <RRNCollapsableSectionItemProtocol>)menuSection).title;
+        ((id <RRNCollapsableTableViewSectionHeaderProtocol>)view).titleLabel.text = ((id <RRNCollapsableTableViewSectionModelProtocol>)menuSection).title;
     }
     
     return view;
@@ -79,13 +79,13 @@
     
     id menuSection = [[self model] objectAtIndex:section];
     
-    BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableSectionHeaderProtocol)];
-    BOOL itemConforms = [menuSection conformsToProtocol:@protocol(RRNCollapsableSectionItemProtocol)];
+    BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableTableViewSectionHeaderProtocol)];
+    BOOL itemConforms = [menuSection conformsToProtocol:@protocol(RRNCollapsableTableViewSectionModelProtocol)];
     
-    if (headerConforms && itemConforms && ((id <RRNCollapsableSectionItemProtocol>)menuSection).isVisible.boolValue) {
-        [((id <RRNCollapsableSectionHeaderProtocol>)view) openAnimated:NO];
+    if (headerConforms && itemConforms && ((id <RRNCollapsableTableViewSectionModelProtocol>)menuSection).isVisible.boolValue) {
+        [((id <RRNCollapsableTableViewSectionHeaderProtocol>)view) openAnimated:NO];
     } else if (headerConforms) {
-        [((id <RRNCollapsableSectionHeaderProtocol>)view) closeAnimated:NO];
+        [((id <RRNCollapsableTableViewSectionHeaderProtocol>)view) closeAnimated:NO];
     }
 }
 
@@ -105,9 +105,9 @@
     
     NSArray *menu = [self model];
     
-    for (id <RRNCollapsableSectionItemProtocol> menuSection in menu) {
+    for (id <RRNCollapsableTableViewSectionModelProtocol> menuSection in menu) {
         
-        if (![menuSection conformsToProtocol:@protocol(RRNCollapsableSectionItemProtocol)]) {
+        if (![menuSection conformsToProtocol:@protocol(RRNCollapsableTableViewSectionModelProtocol)]) {
             continue;
         }
              
@@ -119,10 +119,10 @@
             
             menuSection.isVisible = @NO;
             
-            BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableSectionHeaderProtocol)];
+            BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableTableViewSectionHeaderProtocol)];
             
             if (headerConforms) {
-                [((id <RRNCollapsableSectionHeaderProtocol>)view) closeAnimated:YES];
+                [((id <RRNCollapsableTableViewSectionHeaderProtocol>)view) closeAnimated:YES];
             }
             
             NSInteger section = view.tag;
@@ -137,10 +137,10 @@
             
             menuSection.isVisible = @YES;
             
-            BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableSectionHeaderProtocol)];
+            BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableTableViewSectionHeaderProtocol)];
             
             if (headerConforms) {
-                [((id <RRNCollapsableSectionHeaderProtocol>)view) openAnimated:YES];
+                [((id <RRNCollapsableTableViewSectionHeaderProtocol>)view) openAnimated:YES];
             }
             
             NSInteger section = view.tag;
@@ -161,10 +161,10 @@
             
             UIView *headerView = [tableView headerViewForSection:section];
             
-            BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableSectionHeaderProtocol)];
+            BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableTableViewSectionHeaderProtocol)];
             
             if (headerConforms) {
-                [((id <RRNCollapsableSectionHeaderProtocol>)headerView) closeAnimated:YES];
+                [((id <RRNCollapsableTableViewSectionHeaderProtocol>)headerView) closeAnimated:YES];
             }
             
             NSArray *indexPaths = [self indexPathsForSection:section
@@ -180,7 +180,7 @@
     [tableView endUpdates];
 }
 
--(NSArray *)indexPathsForSection:(NSInteger)section forMenuSection:(id <RRNCollapsableSectionItemProtocol>)menuSection {
+-(NSArray *)indexPathsForSection:(NSInteger)section forMenuSection:(id <RRNCollapsableTableViewSectionModelProtocol>)menuSection {
     NSMutableArray *collector = [NSMutableArray new];
     NSInteger count = menuSection.items.count;
     NSIndexPath *indexPath;

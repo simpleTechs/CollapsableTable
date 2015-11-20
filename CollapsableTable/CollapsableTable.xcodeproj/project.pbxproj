@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		506050581BFE259300CFFEA4 /* CollapsableTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 506050571BFE259300CFFEA4 /* CollapsableTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		506050811BFE2A3600CFFEA4 /* RRNCollapsableSectionHeaderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5060507C1BFE2A3600CFFEA4 /* RRNCollapsableSectionHeaderProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		506050821BFE2A3600CFFEA4 /* RRNCollapsableSectionHeaderReactiveProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5060507D1BFE2A3600CFFEA4 /* RRNCollapsableSectionHeaderReactiveProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		506050831BFE2A3600CFFEA4 /* RRNCollapsableSectionItemProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5060507E1BFE2A3600CFFEA4 /* RRNCollapsableSectionItemProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		506050841BFE2A3600CFFEA4 /* RRNCollapsableSectionTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5060507F1BFE2A3600CFFEA4 /* RRNCollapsableSectionTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		506050851BFE2A3600CFFEA4 /* RRNCollapsableSectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506050801BFE2A3600CFFEA4 /* RRNCollapsableSectionTableViewController.m */; };
+		C95B17641BFEA794009ADEDF /* RRNCollapsableTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C95B175F1BFEA794009ADEDF /* RRNCollapsableTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C95B17651BFEA794009ADEDF /* RRNCollapsableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95B17601BFEA794009ADEDF /* RRNCollapsableTableViewController.m */; };
+		C95B17661BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderInteractionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C95B17611BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderInteractionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C95B17671BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C95B17621BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C95B17681BFEA794009ADEDF /* RRNCollapsableTableViewSectionModelProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C95B17631BFEA794009ADEDF /* RRNCollapsableTableViewSectionModelProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		506050541BFE259300CFFEA4 /* CollapsableTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CollapsableTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		506050571BFE259300CFFEA4 /* CollapsableTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollapsableTable.h; sourceTree = "<group>"; };
 		506050591BFE259300CFFEA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5060507C1BFE2A3600CFFEA4 /* RRNCollapsableSectionHeaderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRNCollapsableSectionHeaderProtocol.h; path = ../../RRNCollapsableSectionHeaderProtocol.h; sourceTree = "<group>"; };
-		5060507D1BFE2A3600CFFEA4 /* RRNCollapsableSectionHeaderReactiveProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRNCollapsableSectionHeaderReactiveProtocol.h; path = ../../RRNCollapsableSectionHeaderReactiveProtocol.h; sourceTree = "<group>"; };
-		5060507E1BFE2A3600CFFEA4 /* RRNCollapsableSectionItemProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRNCollapsableSectionItemProtocol.h; path = ../../RRNCollapsableSectionItemProtocol.h; sourceTree = "<group>"; };
-		5060507F1BFE2A3600CFFEA4 /* RRNCollapsableSectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRNCollapsableSectionTableViewController.h; path = ../../RRNCollapsableSectionTableViewController.h; sourceTree = "<group>"; };
-		506050801BFE2A3600CFFEA4 /* RRNCollapsableSectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRNCollapsableSectionTableViewController.m; path = ../../RRNCollapsableSectionTableViewController.m; sourceTree = "<group>"; };
+		C95B175F1BFEA794009ADEDF /* RRNCollapsableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRNCollapsableTableViewController.h; path = ../../RRNCollapsableTableViewController.h; sourceTree = "<group>"; };
+		C95B17601BFEA794009ADEDF /* RRNCollapsableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRNCollapsableTableViewController.m; path = ../../RRNCollapsableTableViewController.m; sourceTree = "<group>"; };
+		C95B17611BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderInteractionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRNCollapsableTableViewSectionHeaderInteractionProtocol.h; path = ../../RRNCollapsableTableViewSectionHeaderInteractionProtocol.h; sourceTree = "<group>"; };
+		C95B17621BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRNCollapsableTableViewSectionHeaderProtocol.h; path = ../../RRNCollapsableTableViewSectionHeaderProtocol.h; sourceTree = "<group>"; };
+		C95B17631BFEA794009ADEDF /* RRNCollapsableTableViewSectionModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRNCollapsableTableViewSectionModelProtocol.h; path = ../../RRNCollapsableTableViewSectionModelProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +57,11 @@
 			isa = PBXGroup;
 			children = (
 				506050571BFE259300CFFEA4 /* CollapsableTable.h */,
-				5060507C1BFE2A3600CFFEA4 /* RRNCollapsableSectionHeaderProtocol.h */,
-				5060507D1BFE2A3600CFFEA4 /* RRNCollapsableSectionHeaderReactiveProtocol.h */,
-				5060507E1BFE2A3600CFFEA4 /* RRNCollapsableSectionItemProtocol.h */,
-				5060507F1BFE2A3600CFFEA4 /* RRNCollapsableSectionTableViewController.h */,
-				506050801BFE2A3600CFFEA4 /* RRNCollapsableSectionTableViewController.m */,
+				C95B175F1BFEA794009ADEDF /* RRNCollapsableTableViewController.h */,
+				C95B17601BFEA794009ADEDF /* RRNCollapsableTableViewController.m */,
+				C95B17611BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderInteractionProtocol.h */,
+				C95B17621BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderProtocol.h */,
+				C95B17631BFEA794009ADEDF /* RRNCollapsableTableViewSectionModelProtocol.h */,
 				506050591BFE259300CFFEA4 /* Info.plist */,
 			);
 			path = CollapsableTable;
@@ -74,11 +74,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				506050821BFE2A3600CFFEA4 /* RRNCollapsableSectionHeaderReactiveProtocol.h in Headers */,
 				506050581BFE259300CFFEA4 /* CollapsableTable.h in Headers */,
-				506050811BFE2A3600CFFEA4 /* RRNCollapsableSectionHeaderProtocol.h in Headers */,
-				506050831BFE2A3600CFFEA4 /* RRNCollapsableSectionItemProtocol.h in Headers */,
-				506050841BFE2A3600CFFEA4 /* RRNCollapsableSectionTableViewController.h in Headers */,
+				C95B17641BFEA794009ADEDF /* RRNCollapsableTableViewController.h in Headers */,
+				C95B17661BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderInteractionProtocol.h in Headers */,
+				C95B17681BFEA794009ADEDF /* RRNCollapsableTableViewSectionModelProtocol.h in Headers */,
+				C95B17671BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				506050851BFE2A3600CFFEA4 /* RRNCollapsableSectionTableViewController.m in Sources */,
+				C95B17651BFEA794009ADEDF /* RRNCollapsableTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
