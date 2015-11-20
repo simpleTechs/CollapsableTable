@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/rob-nash/RRNCollapsableSectionTableView.svg?branch=master)](https://travis-ci.org/rob-nash/RRNCollapsableSectionTableView)
+[![Build Status](https://travis-ci.org/rob-nash/CollapsableTable.svg?branch=master)](https://travis-ci.org/rob-nash/CollapsableTable)
 
 ![](http://i.imgur.com/jDq37Ip.gif?1)
 ![](http://i.imgur.com/77YQhPE.gif?1)
@@ -22,10 +22,13 @@ In XCode, select 'Add Files To Project', and select the following
 	* override 'model' and return a pointer to an array of objects, which conform to RRNCollapsableSectionItem Protocol.
 	* override 'sectionHeaderNibName' and return the filename of the nib you created in step 2.
 
-Try the Demo by running the 'Example' scheme in the 'OpenMe' workspace.
+Try the Demo by running the 'Example' scheme in the 'Development' workspace.
+
+## Contributions
+Please use the 'Development' workspace.
 
 ## Upcoming
 * Carthage support
 
 ## License
-RRNCollapsableSectionTableViewController is released under the MIT license. See 'Licence.md' for details.
+CollapsableTable is released under the MIT license. See 'Licence.md' for details.
