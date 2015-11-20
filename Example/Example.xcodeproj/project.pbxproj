@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		506050871BFE2B4300CFFEA4 /* CollapsableTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506050861BFE2B4300CFFEA4 /* CollapsableTable.framework */; };
 		5060508A1BFE2B9D00CFFEA4 /* MenuSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 506050891BFE2B9D00CFFEA4 /* MenuSection.m */; };
 		5060508D1BFE2BA600CFFEA4 /* FakeModelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5060508C1BFE2BA600CFFEA4 /* FakeModelBuilder.m */; };
 		506050911BFE2BBF00CFFEA4 /* MenuSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5060508F1BFE2BBF00CFFEA4 /* MenuSectionHeaderView.m */; };
@@ -21,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		506050861BFE2B4300CFFEA4 /* CollapsableTable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CollapsableTable.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/OpenMe-cwtkofsvuptrqdcsgzcxvhmizjwf/Build/Products/Debug-iphoneos/CollapsableTable.framework"; sourceTree = "<group>"; };
 		506050881BFE2B9D00CFFEA4 /* MenuSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuSection.h; path = Model/MenuSection.h; sourceTree = "<group>"; };
 		506050891BFE2B9D00CFFEA4 /* MenuSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuSection.m; path = Model/MenuSection.m; sourceTree = "<group>"; };
 		5060508B1BFE2BA600CFFEA4 /* FakeModelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FakeModelBuilder.h; path = Model/FakeModelBuilder.h; sourceTree = "<group>"; };
@@ -46,21 +44,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				506050871BFE2B4300CFFEA4 /* CollapsableTable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		506050961BFE2C1000CFFEA4 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				506050861BFE2B4300CFFEA4 /* CollapsableTable.framework */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
 		50AB33DB1BAD7D1D0087FDAB /* FakeModelBuilder */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,7 +135,6 @@
 				50AB33DF1BAD7E720087FDAB /* Model */,
 				50AB33E01BAD7E770087FDAB /* View */,
 				50AB33E11BAD7E7F0087FDAB /* Controller */,
-				506050961BFE2C1000CFFEA4 /* Dependencies */,
 				50E4BAC81B9E8D72002488A6 /* Supporting Files */,
 			);
 			path = Example;
