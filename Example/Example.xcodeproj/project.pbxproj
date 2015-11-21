@@ -17,23 +17,8 @@
 		50E4BAD41B9E8D72002488A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E4BAD21B9E8D72002488A6 /* Main.storyboard */; };
 		50E4BAD61B9E8D72002488A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E4BAD51B9E8D72002488A6 /* Images.xcassets */; };
 		50E4BAD91B9E8D72002488A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E4BAD71B9E8D72002488A6 /* LaunchScreen.xib */; };
-		C92008581BFFA5D800C0696E /* CollapsableTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92008571BFFA5D800C0696E /* CollapsableTable.framework */; };
-		C92008591BFFA5D800C0696E /* CollapsableTable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C92008571BFFA5D800C0696E /* CollapsableTable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9F65C8A1BFFF354006A99CD /* CollapsableTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F65C891BFFF354006A99CD /* CollapsableTable.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C920085A1BFFA5D800C0696E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C92008591BFFA5D800C0696E /* CollapsableTable.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		506050881BFE2B9D00CFFEA4 /* MenuSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuSection.h; path = Model/MenuSection.h; sourceTree = "<group>"; };
@@ -53,7 +38,7 @@
 		50E4BAD31B9E8D72002488A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50E4BAD51B9E8D72002488A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		50E4BAD81B9E8D72002488A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C92008571BFFA5D800C0696E /* CollapsableTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CollapsableTable.framework; path = "/Users/rnash/Library/Developer/Xcode/DerivedData/Development-fbpisimtwnujnxcavrxnrekedcwm/Build/Products/Debug-iphoneos/CollapsableTable.framework"; sourceTree = "<absolute>"; };
+		C9F65C891BFFF354006A99CD /* CollapsableTable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CollapsableTable.framework; path = "../../CollapsableTable/build/Debug-iphoneos/CollapsableTable.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C92008581BFFA5D800C0696E /* CollapsableTable.framework in Frameworks */,
+				C9F65C8A1BFFF354006A99CD /* CollapsableTable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +139,7 @@
 				50AB33E01BAD7E770087FDAB /* View */,
 				50AB33E11BAD7E7F0087FDAB /* Controller */,
 				50E4BAC81B9E8D72002488A6 /* Supporting Files */,
-				C92008571BFFA5D800C0696E /* CollapsableTable.framework */,
+				C9F65C891BFFF354006A99CD /* CollapsableTable.framework */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -182,7 +167,6 @@
 				50E4BAC11B9E8D72002488A6 /* Sources */,
 				50E4BAC21B9E8D72002488A6 /* Frameworks */,
 				50E4BAC31B9E8D72002488A6 /* Resources */,
-				C920085A1BFFA5D800C0696E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
