@@ -1,4 +1,5 @@
-[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/rob-nash/CollapsableTable/master/Licence.md)[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/rob-nash/CollapsableTable/master/LICENCE.md)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ![](http://i.imgur.com/jDq37Ip.gif?1)
 ![](http://i.imgur.com/77YQhPE.gif?1)
@@ -26,6 +27,3 @@ Try the Demo by running the 'Example' scheme in the 'Development' workspace.
 
 ## Contributions
 Please use the 'Development' workspace.
-
-## License
-CollapsableTable is released under the MIT license. See 'Licence.md' for details.
