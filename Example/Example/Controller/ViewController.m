@@ -36,6 +36,11 @@
     return self.tableView;
 }
 
+-(BOOL)shouldCollapse:(NSInteger)tableSection {
+    id <RRNCollapsableTableViewSectionModelProtocol> mSection = self.menu[tableSection];
+    return mSection.items.count < 1000;
+}
+
 #pragma mark - UITableView
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

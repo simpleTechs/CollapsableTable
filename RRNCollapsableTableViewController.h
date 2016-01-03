@@ -10,13 +10,11 @@
 
 @interface RRNCollapsableTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, RRNCollapsableTableViewSectionHeaderInteractionProtocol>
 
-//Override required
 -(NSArray *)model;
 -(UITableView *)collapsableTableView;
 -(NSString *)sectionHeaderNibName;
-
-//Override optional
 -(void)userTapped:(UIView <RRNCollapsableTableViewSectionHeaderProtocol> *)view;
 -(BOOL)singleOpenSelectionOnly;
+-(BOOL)shouldCollapse:(NSInteger)tableSection;
 
 @end
