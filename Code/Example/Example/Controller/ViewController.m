@@ -37,8 +37,7 @@
 }
 
 -(BOOL)shouldCollapse:(NSInteger)tableSection {
-    id <RRNCollapsableTableViewSectionModelProtocol> mSection = self.menu[tableSection];
-    return mSection.items.count < 1000;
+    return YES;
 }
 
 #pragma mark - UITableView

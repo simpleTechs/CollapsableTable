@@ -15,6 +15,5 @@
 -(NSString *)sectionHeaderNibName;
 -(void)userTapped:(UIView <RRNCollapsableTableViewSectionHeaderProtocol> *)view;
 -(BOOL)singleOpenSelectionOnly;
--(BOOL)shouldCollapse:(NSInteger)tableSection;
 
 @end

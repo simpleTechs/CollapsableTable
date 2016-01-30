@@ -41,10 +41,6 @@
     return [[self sectionHeaderNibName] stringByAppendingString:@"ID"];
 }
 
--(BOOL)shouldCollapse:(NSInteger)tableSection {
-    return YES;
-}
-
 #pragma mark - UITableView
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -129,19 +125,11 @@
                 [((id <RRNCollapsableTableViewSectionHeaderProtocol>)view) closeAnimated:YES];
             }
             
-            NSInteger section = view.tag;
+            NSArray *indexPaths = [self indexPathsForSection:view.tag
+                                              forMenuSection:menuSection];
             
-            BOOL shouldCollapse = [self shouldCollapse:section];
-            
-            if (shouldCollapse) {
-                NSArray *indexPaths = [self indexPathsForSection:section
-                                                  forMenuSection:menuSection];
-                
-                [tableView deleteRowsAtIndexPaths:indexPaths
-                                 withRowAnimation:(foundOpenUnchosenMenuSection) ? UITableViewRowAnimationBottom : UITableViewRowAnimationTop];
-            } else {
-                [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:UITableViewRowAnimationFade];
-            }
+            [tableView deleteRowsAtIndexPaths:indexPaths
+                             withRowAnimation:(foundOpenUnchosenMenuSection) ? UITableViewRowAnimationBottom : UITableViewRowAnimationTop];
             
         } else if (!isVisible && chosenMenuSection) {
             
@@ -153,19 +141,11 @@
                 [((id <RRNCollapsableTableViewSectionHeaderProtocol>)view) openAnimated:YES];
             }
             
-            NSInteger section = view.tag;
+            NSArray *indexPaths = [self indexPathsForSection:view.tag
+                                              forMenuSection:menuSection];
             
-            BOOL shouldCollapse = [self shouldCollapse:section];
-            
-            if (shouldCollapse) {
-                NSArray *indexPaths = [self indexPathsForSection:section
-                                                  forMenuSection:menuSection];
-                
-                [tableView insertRowsAtIndexPaths:indexPaths
-                                 withRowAnimation:(foundOpenUnchosenMenuSection) ? UITableViewRowAnimationBottom : UITableViewRowAnimationTop];
-            } else {
-                [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:UITableViewRowAnimationFade];
-            }
+            [tableView insertRowsAtIndexPaths:indexPaths
+                             withRowAnimation:(foundOpenUnchosenMenuSection) ? UITableViewRowAnimationBottom : UITableViewRowAnimationTop];
             
         } else if (isVisible && !chosenMenuSection && [self singleOpenSelectionOnly]) {
             
@@ -183,17 +163,11 @@
                 [((id <RRNCollapsableTableViewSectionHeaderProtocol>)headerView) closeAnimated:YES];
             }
             
-            BOOL shouldCollapse = [self shouldCollapse:section];
+            NSArray *indexPaths = [self indexPathsForSection:section
+                                              forMenuSection:menuSection];
             
-            if (shouldCollapse) {
-                NSArray *indexPaths = [self indexPathsForSection:section
-                                                  forMenuSection:menuSection];
-                
-                [tableView deleteRowsAtIndexPaths:indexPaths
-                                 withRowAnimation:(view.tag > section) ? UITableViewRowAnimationTop : UITableViewRowAnimationBottom];
-            } else {
-                [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:UITableViewRowAnimationFade];
-            }
+            [tableView deleteRowsAtIndexPaths:indexPaths
+                             withRowAnimation:(view.tag > section) ? UITableViewRowAnimationTop : UITableViewRowAnimationBottom];
         }
         
     }
