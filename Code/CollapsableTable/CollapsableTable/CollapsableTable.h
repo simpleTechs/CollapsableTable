@@ -7,7 +7,6 @@
 //
 
 #import <CollapsableTable/RRNCollapsableTableViewSectionHeaderProtocol.h>
-#import <CollapsableTable/RRNCollapsableTableViewSectionHeaderInteractionProtocol.h>
 #import <CollapsableTable/RRNCollapsableTableViewSectionModelProtocol.h>
 #import <CollapsableTable/RRNCollapsableTableViewController.h>
 

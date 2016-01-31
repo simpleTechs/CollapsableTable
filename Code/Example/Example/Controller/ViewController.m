@@ -36,7 +36,7 @@
     return self.tableView;
 }
 
--(BOOL)shouldCollapse:(NSInteger)tableSection {
+-(BOOL)singleOpenSelectionOnly {
     return YES;
 }
 
