@@ -36,9 +36,8 @@
     return self.tableView;
 }
 
--(BOOL)shouldCollapse:(NSInteger)tableSection {
-    id <RRNCollapsableTableViewSectionModelProtocol> mSection = self.menu[tableSection];
-    return mSection.items.count < 1000;
+-(BOOL)singleOpenSelectionOnly {
+    return YES;
 }
 
 #pragma mark - UITableView

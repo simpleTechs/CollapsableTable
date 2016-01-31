@@ -41,10 +41,6 @@
     return [[self sectionHeaderNibName] stringByAppendingString:@"ID"];
 }
 
--(BOOL)shouldCollapse:(NSInteger)tableSection {
-    return YES;
-}
-
 #pragma mark - UITableView
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -61,8 +57,7 @@
     
     id menuSection = [[self model] objectAtIndex:section];
     
-    UIView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[self sectionHeaderReuseIdentifier]];
-    view.tag = section;
+    UITableViewHeaderFooterView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[self sectionHeaderReuseIdentifier]];
     
     BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableTableViewSectionHeaderProtocol)];
     
@@ -97,11 +92,21 @@
     return nil;
 }
 
-#pragma mark - ReactiveSectionHeaderProtocol
+#pragma mark - RRNCollapsableTableViewSectionHeaderProtocol
 
--(void)userTapped:(UIView *)view {
+-(void)userTappedView:(UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol> *)view atPoint:(CGPoint)point {
     
     UITableView *tableView = [self collapsableTableView];
+    
+    NSNumber *value = [self sectionForUserSelectionInTableView:tableView
+                                               atTouchLocation:point
+                                            inHeaderFooterView:view];
+    
+    if (!value) {
+        return;
+    }
+    
+    NSUInteger tappedSection = value.integerValue;
     
     [tableView beginUpdates];
     
@@ -114,94 +119,94 @@
         if (![menuSection conformsToProtocol:@protocol(RRNCollapsableTableViewSectionModelProtocol)]) {
             continue;
         }
-             
-        BOOL chosenMenuSection = menuSection == [menu objectAtIndex:view.tag];
         
-        BOOL isVisible = menuSection.isVisible.boolValue;
+        BOOL isTappedSection = ([menuSection isEqual:[menu objectAtIndex:tappedSection]]);
         
-        if (isVisible && chosenMenuSection) {
+        if (isTappedSection) {
             
-            menuSection.isVisible = @NO;
+            menuSection.isVisible = @(!menuSection.isVisible.boolValue);
             
-            BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableTableViewSectionHeaderProtocol)];
+            [self toggleCollapseTableViewSectionAtSection:tappedSection
+                                                withModel:menuSection
+                                              inTableView:tableView
+                                        usingRowAnimation:(foundOpenUnchosenMenuSection) ? UITableViewRowAnimationBottom : UITableViewRowAnimationTop
+                           forSectionWithHeaderFooterView:view];
             
-            if (headerConforms) {
-                [((id <RRNCollapsableTableViewSectionHeaderProtocol>)view) closeAnimated:YES];
-            }
-            
-            NSInteger section = view.tag;
-            
-            BOOL shouldCollapse = [self shouldCollapse:section];
-            
-            if (shouldCollapse) {
-                NSArray *indexPaths = [self indexPathsForSection:section
-                                                  forMenuSection:menuSection];
-                
-                [tableView deleteRowsAtIndexPaths:indexPaths
-                                 withRowAnimation:(foundOpenUnchosenMenuSection) ? UITableViewRowAnimationBottom : UITableViewRowAnimationTop];
-            } else {
-                [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:UITableViewRowAnimationFade];
-            }
-            
-        } else if (!isVisible && chosenMenuSection) {
-            
-            menuSection.isVisible = @YES;
-            
-            BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableTableViewSectionHeaderProtocol)];
-            
-            if (headerConforms) {
-                [((id <RRNCollapsableTableViewSectionHeaderProtocol>)view) openAnimated:YES];
-            }
-            
-            NSInteger section = view.tag;
-            
-            BOOL shouldCollapse = [self shouldCollapse:section];
-            
-            if (shouldCollapse) {
-                NSArray *indexPaths = [self indexPathsForSection:section
-                                                  forMenuSection:menuSection];
-                
-                [tableView insertRowsAtIndexPaths:indexPaths
-                                 withRowAnimation:(foundOpenUnchosenMenuSection) ? UITableViewRowAnimationBottom : UITableViewRowAnimationTop];
-            } else {
-                [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:UITableViewRowAnimationFade];
-            }
-            
-        } else if (isVisible && !chosenMenuSection && [self singleOpenSelectionOnly]) {
+        } else if (menuSection.isVisible.boolValue && [self singleOpenSelectionOnly]) {
             
             foundOpenUnchosenMenuSection = YES;
             
-            menuSection.isVisible = @NO;
+            menuSection.isVisible = @(!menuSection.isVisible.boolValue);
             
-            NSInteger section = [menu indexOfObject:menuSection];
+            NSInteger untappedSection = [menu indexOfObject:menuSection];
             
-            UIView *headerView = [tableView headerViewForSection:section];
+            UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol> *untappedHeaderFooterView = [self headerViewInTableView:tableView
+                                                                                                                                    forSection:untappedSection];
             
-            BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableTableViewSectionHeaderProtocol)];
-            
-            if (headerConforms) {
-                [((id <RRNCollapsableTableViewSectionHeaderProtocol>)headerView) closeAnimated:YES];
-            }
-            
-            BOOL shouldCollapse = [self shouldCollapse:section];
-            
-            if (shouldCollapse) {
-                NSArray *indexPaths = [self indexPathsForSection:section
-                                                  forMenuSection:menuSection];
-                
-                [tableView deleteRowsAtIndexPaths:indexPaths
-                                 withRowAnimation:(view.tag > section) ? UITableViewRowAnimationTop : UITableViewRowAnimationBottom];
-            } else {
-                [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:UITableViewRowAnimationFade];
-            }
+            [self toggleCollapseTableViewSectionAtSection:untappedSection
+                                                withModel:menuSection
+                                              inTableView:tableView
+                                        usingRowAnimation:(tappedSection > untappedSection) ? UITableViewRowAnimationTop : UITableViewRowAnimationBottom
+                           forSectionWithHeaderFooterView:untappedHeaderFooterView];
         }
         
     }
     
     [tableView endUpdates];
+    
+}
+
+-(NSNumber *)sectionForUserSelectionInTableView:(UITableView *)tableView atTouchLocation:(CGPoint)location inHeaderFooterView:(UITableViewHeaderFooterView *)view {
+    
+    CGPoint point = [tableView convertPoint:location
+                                   fromView:view];
+    
+    for (NSInteger i = 0; i < [tableView numberOfSections]; i++) {
+        CGRect rect = [tableView rectForHeaderInSection:i];
+        if (CGRectContainsPoint(rect, point)) {
+            return @(i);
+        }
+    }
+    
+    return nil;
+}
+
+-(UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol> *)headerViewInTableView:(UITableView *)tableView forSection:(NSUInteger)section {
+    
+    UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol> *returnValue;
+    
+    UITableViewHeaderFooterView *headerFooterView = [tableView headerViewForSection:section];
+    
+    if ([headerFooterView conformsToProtocol:@protocol(RRNCollapsableTableViewSectionHeaderProtocol)]) {
+        returnValue = (UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol> *)headerFooterView;
+    }
+    
+    return returnValue;
+}
+
+-(void)toggleCollapseTableViewSectionAtSection:(NSUInteger)section
+                                     withModel:(id <RRNCollapsableTableViewSectionModelProtocol>)model
+                                   inTableView:(UITableView *)tableView
+                             usingRowAnimation:(UITableViewRowAnimation)animation
+                forSectionWithHeaderFooterView:(UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol> *)headerFooterView {
+    
+    NSArray *indexPaths = [self indexPathsForSection:section
+                                      forMenuSection:model];
+    
+    if (model.isVisible.boolValue) {
+        [headerFooterView openAnimated:YES];
+        [tableView insertRowsAtIndexPaths:indexPaths
+                         withRowAnimation:animation];
+    } else {
+        [headerFooterView closeAnimated:YES];
+        [tableView deleteRowsAtIndexPaths:indexPaths
+                         withRowAnimation:animation];
+    }
+    
 }
 
 -(NSArray *)indexPathsForSection:(NSInteger)section forMenuSection:(id <RRNCollapsableTableViewSectionModelProtocol>)menuSection {
+    
     NSMutableArray *collector = [NSMutableArray new];
     NSInteger count = menuSection.items.count;
     NSIndexPath *indexPath;

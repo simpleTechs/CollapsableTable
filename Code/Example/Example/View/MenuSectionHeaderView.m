@@ -21,7 +21,11 @@
 @synthesize interactionDelegate = _interactionDelegate;
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    [self.interactionDelegate userTapped:self];
+    
+    UITouch *touch = [[event allTouches] anyObject];
+    CGPoint point = [touch locationInView:self];
+    
+    [self.interactionDelegate userTappedView:self atPoint:point];
 }
 
 -(void)openAnimated:(BOOL)animated {

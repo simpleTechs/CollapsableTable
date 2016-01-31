@@ -10,7 +10,6 @@
 		506050581BFE259300CFFEA4 /* CollapsableTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 506050571BFE259300CFFEA4 /* CollapsableTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C95B17641BFEA794009ADEDF /* RRNCollapsableTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C95B175F1BFEA794009ADEDF /* RRNCollapsableTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C95B17651BFEA794009ADEDF /* RRNCollapsableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95B17601BFEA794009ADEDF /* RRNCollapsableTableViewController.m */; };
-		C95B17661BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderInteractionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C95B17611BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderInteractionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C95B17671BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C95B17621BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C95B17681BFEA794009ADEDF /* RRNCollapsableTableViewSectionModelProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C95B17631BFEA794009ADEDF /* RRNCollapsableTableViewSectionModelProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -21,7 +20,6 @@
 		506050591BFE259300CFFEA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C95B175F1BFEA794009ADEDF /* RRNCollapsableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRNCollapsableTableViewController.h; path = ../../RRNCollapsableTableViewController.h; sourceTree = "<group>"; };
 		C95B17601BFEA794009ADEDF /* RRNCollapsableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRNCollapsableTableViewController.m; path = ../../RRNCollapsableTableViewController.m; sourceTree = "<group>"; };
-		C95B17611BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderInteractionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRNCollapsableTableViewSectionHeaderInteractionProtocol.h; path = ../../RRNCollapsableTableViewSectionHeaderInteractionProtocol.h; sourceTree = "<group>"; };
 		C95B17621BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRNCollapsableTableViewSectionHeaderProtocol.h; path = ../../RRNCollapsableTableViewSectionHeaderProtocol.h; sourceTree = "<group>"; };
 		C95B17631BFEA794009ADEDF /* RRNCollapsableTableViewSectionModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRNCollapsableTableViewSectionModelProtocol.h; path = ../../RRNCollapsableTableViewSectionModelProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,7 +57,6 @@
 				506050571BFE259300CFFEA4 /* CollapsableTable.h */,
 				C95B175F1BFEA794009ADEDF /* RRNCollapsableTableViewController.h */,
 				C95B17601BFEA794009ADEDF /* RRNCollapsableTableViewController.m */,
-				C95B17611BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderInteractionProtocol.h */,
 				C95B17621BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderProtocol.h */,
 				C95B17631BFEA794009ADEDF /* RRNCollapsableTableViewSectionModelProtocol.h */,
 				506050591BFE259300CFFEA4 /* Info.plist */,
@@ -76,7 +73,6 @@
 			files = (
 				506050581BFE259300CFFEA4 /* CollapsableTable.h in Headers */,
 				C95B17641BFEA794009ADEDF /* RRNCollapsableTableViewController.h in Headers */,
-				C95B17661BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderInteractionProtocol.h in Headers */,
 				C95B17681BFEA794009ADEDF /* RRNCollapsableTableViewSectionModelProtocol.h in Headers */,
 				C95B17671BFEA794009ADEDF /* RRNCollapsableTableViewSectionHeaderProtocol.h in Headers */,
 			);
