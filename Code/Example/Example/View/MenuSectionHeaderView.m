@@ -22,6 +22,8 @@
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     
+    [super touchesEnded:touches withEvent:event];
+    
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint point = [touch locationInView:self];
     
