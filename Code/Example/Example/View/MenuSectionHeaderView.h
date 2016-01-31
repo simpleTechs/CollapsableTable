@@ -9,5 +9,9 @@
 #import <CollapsableTable/CollapsableTable.h>
 
 @interface MenuSectionHeaderView : UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol>
+
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
++(CGFloat)minimumHeight;
+
 @end

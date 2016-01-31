@@ -10,7 +10,7 @@
 
 @implementation FakeModelBuilder
 
-+(NSArray *)buildMenu {
++(NSArray <MenuSection *> *)buildMenu {
     
     NSMutableArray *collector = [NSMutableArray new];
     

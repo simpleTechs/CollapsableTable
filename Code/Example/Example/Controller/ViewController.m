@@ -7,37 +7,41 @@
 //
 
 #import "ViewController.h"
+#import "MenuSectionHeaderView.h"
 #import "FakeModelBuilder.h"
 
 @interface ViewController ()
-@property (strong, nonatomic) NSArray *menu;
+@property (strong, nonatomic) NSArray <RRNCollapsableTableViewSectionModelProtocol> *menu;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
 @implementation ViewController
 
--(NSArray *)menu {
-    if (_menu == nil) {
-        _menu = [FakeModelBuilder buildMenu];
-    }
-    return _menu;
-}
-
 #pragma mark - RRNCollapsableTableView
-
--(NSString *)sectionHeaderNibName {
-    return @"MenuSectionHeaderView";
-}
-
--(NSArray *)model {
-    return self.menu;
-}
 
 -(UITableView *)collapsableTableView {
     return self.tableView;
 }
 
+-(NSString *)sectionHeaderNibName {
+    return NSStringFromClass([MenuSectionHeaderView class]);
+}
+
 -(BOOL)singleOpenSelectionOnly {
     return YES;
+}
+
+#pragma mark - Menu
+
+-(NSArray <RRNCollapsableTableViewSectionModelProtocol> *)menu {
+    if (_menu == nil) {
+        _menu = (NSArray <RRNCollapsableTableViewSectionModelProtocol> *)[FakeModelBuilder buildMenu];
+    }
+    return _menu;
+}
+
+-(NSArray <RRNCollapsableTableViewSectionModelProtocol> *)model {
+    return self.menu;
 }
 
 #pragma mark - UITableView
@@ -47,13 +51,13 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 44.0f;
+    return [MenuSectionHeaderView minimumHeight];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    //id <RRNCollapsableSectionItemProtocol> mSection = self.menu[indexPath.section];
-    //id item = mSection.items[indexPath.row];
+//    id <RRNCollapsableTableViewSectionModelProtocol> mSection = self.menu[indexPath.section];
+//    id item = mSection.items[indexPath.row];
     
     return [tableView dequeueReusableCellWithIdentifier:@"Cell"];
 }

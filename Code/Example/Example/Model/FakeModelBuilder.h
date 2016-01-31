@@ -10,6 +10,6 @@
 
 @interface FakeModelBuilder : NSObject
 
-+(NSArray *)buildMenu;
++(NSArray <MenuSection *> *)buildMenu;
 
 @end

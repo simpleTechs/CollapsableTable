@@ -44,7 +44,7 @@
     return nil;
 }
 
--(NSArray *)model {
+-(NSArray <RRNCollapsableTableViewSectionModelProtocol> *)model {
     return nil;
 }
 
