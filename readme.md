@@ -1,11 +1,12 @@
+###Collapsable Table
 [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/rob-nash/CollapsableTable/master/Licence.md)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-![](http://i.imgur.com/jDq37Ip.gif?1)
-![](http://i.imgur.com/77YQhPE.gif?1)
-
 ##Description
 A subclass of UIViewController. The creative design is 100% the responsibility of the implementing developer. So plenty of freedom to create any look.
+
+![](http://i.imgur.com/jDq37Ip.gif?1)
+![](http://i.imgur.com/77YQhPE.gif?1)
 
 ## Requirements
 XCode 6.4+, iOS 8.0+
