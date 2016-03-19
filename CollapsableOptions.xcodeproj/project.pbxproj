@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		503D30981C9DCDBE0001FF90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D30971C9DCDBE0001FF90 /* main.m */; };
+		503D309B1C9DCDBE0001FF90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D309A1C9DCDBE0001FF90 /* AppDelegate.m */; };
+		503D309E1C9DCDBE0001FF90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D309D1C9DCDBE0001FF90 /* ViewController.m */; };
+		503D30A31C9DCDBE0001FF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503D30A21C9DCDBE0001FF90 /* Assets.xcassets */; };
+		503D30D01C9DCE290001FF90 /* FakeModelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D30CA1C9DCE290001FF90 /* FakeModelBuilder.m */; };
+		503D30D11C9DCE290001FF90 /* MenuSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D30CC1C9DCE290001FF90 /* MenuSection.m */; };
+		503D30D21C9DCE290001FF90 /* MenuSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D30CE1C9DCE290001FF90 /* MenuSectionHeaderView.m */; };
+		503D30D31C9DCE290001FF90 /* MenuSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503D30CF1C9DCE290001FF90 /* MenuSectionHeaderView.xib */; };
+		503D30D51C9DD26B0001FF90 /* CollapsableTableKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503D30D41C9DD26B0001FF90 /* CollapsableTableKit.framework */; };
+		503D30D61C9DD26B0001FF90 /* CollapsableTableKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 503D30D41C9DD26B0001FF90 /* CollapsableTableKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50F4907F1C9DD68C000CFB95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F4907B1C9DD68C000CFB95 /* LaunchScreen.storyboard */; };
+		50F490801C9DD68C000CFB95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F4907D1C9DD68C000CFB95 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		503D30D71C9DD26C0001FF90 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				503D30D61C9DD26B0001FF90 /* CollapsableTableKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		503D30931C9DCDBE0001FF90 /* CollapsableOptions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollapsableOptions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		503D30971C9DCDBE0001FF90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../CollapsableOptions/main.m; sourceTree = "<group>"; };
+		503D30991C9DCDBE0001FF90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../CollapsableOptions/AppDelegate.h; sourceTree = "<group>"; };
+		503D309A1C9DCDBE0001FF90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../CollapsableOptions/AppDelegate.m; sourceTree = "<group>"; };
+		503D309C1C9DCDBE0001FF90 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../CollapsableOptions/ViewController.h; sourceTree = "<group>"; };
+		503D309D1C9DCDBE0001FF90 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../CollapsableOptions/ViewController.m; sourceTree = "<group>"; };
+		503D30A21C9DCDBE0001FF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../CollapsableOptions/Assets.xcassets; sourceTree = "<group>"; };
+		503D30A71C9DCDBE0001FF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../CollapsableOptions/Info.plist; sourceTree = "<group>"; };
+		503D30C91C9DCE290001FF90 /* FakeModelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FakeModelBuilder.h; path = ../CollapsableOptions/FakeModelBuilder.h; sourceTree = "<group>"; };
+		503D30CA1C9DCE290001FF90 /* FakeModelBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeModelBuilder.m; path = ../CollapsableOptions/FakeModelBuilder.m; sourceTree = "<group>"; };
+		503D30CB1C9DCE290001FF90 /* MenuSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuSection.h; path = ../CollapsableOptions/MenuSection.h; sourceTree = "<group>"; };
+		503D30CC1C9DCE290001FF90 /* MenuSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuSection.m; path = ../CollapsableOptions/MenuSection.m; sourceTree = "<group>"; };
+		503D30CD1C9DCE290001FF90 /* MenuSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuSectionHeaderView.h; path = ../CollapsableOptions/MenuSectionHeaderView.h; sourceTree = "<group>"; };
+		503D30CE1C9DCE290001FF90 /* MenuSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuSectionHeaderView.m; path = ../CollapsableOptions/MenuSectionHeaderView.m; sourceTree = "<group>"; };
+		503D30CF1C9DCE290001FF90 /* MenuSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuSectionHeaderView.xib; path = ../CollapsableOptions/MenuSectionHeaderView.xib; sourceTree = "<group>"; };
+		503D30D41C9DD26B0001FF90 /* CollapsableTableKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CollapsableTableKit.framework; path = ../Carthage/Build/iOS/CollapsableTableKit.framework; sourceTree = "<group>"; };
+		50F4907C1C9DD68C000CFB95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CollapsableOptions/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		50F4907E1C9DD68C000CFB95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CollapsableOptions/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		503D30901C9DCDBE0001FF90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503D30D51C9DD26B0001FF90 /* CollapsableTableKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		503D308A1C9DCDBE0001FF90 = {
+			isa = PBXGroup;
+			children = (
+				503D30951C9DCDBE0001FF90 /* CollapsableOptions */,
+				503D30941C9DCDBE0001FF90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		503D30941C9DCDBE0001FF90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				503D30931C9DCDBE0001FF90 /* CollapsableOptions.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		503D30951C9DCDBE0001FF90 /* CollapsableOptions */ = {
+			isa = PBXGroup;
+			children = (
+				503D30D41C9DD26B0001FF90 /* CollapsableTableKit.framework */,
+				503D30991C9DCDBE0001FF90 /* AppDelegate.h */,
+				503D309A1C9DCDBE0001FF90 /* AppDelegate.m */,
+				503D30C91C9DCE290001FF90 /* FakeModelBuilder.h */,
+				503D30CA1C9DCE290001FF90 /* FakeModelBuilder.m */,
+				503D30CB1C9DCE290001FF90 /* MenuSection.h */,
+				503D30CC1C9DCE290001FF90 /* MenuSection.m */,
+				503D30CD1C9DCE290001FF90 /* MenuSectionHeaderView.h */,
+				503D30CE1C9DCE290001FF90 /* MenuSectionHeaderView.m */,
+				503D30CF1C9DCE290001FF90 /* MenuSectionHeaderView.xib */,
+				503D309C1C9DCDBE0001FF90 /* ViewController.h */,
+				503D309D1C9DCDBE0001FF90 /* ViewController.m */,
+				50F4907B1C9DD68C000CFB95 /* LaunchScreen.storyboard */,
+				50F4907D1C9DD68C000CFB95 /* Main.storyboard */,
+				503D30A21C9DCDBE0001FF90 /* Assets.xcassets */,
+				503D30A71C9DCDBE0001FF90 /* Info.plist */,
+				503D30961C9DCDBE0001FF90 /* Supporting Files */,
+			);
+			name = CollapsableOptions;
+			path = CollapsableTable;
+			sourceTree = "<group>";
+		};
+		503D30961C9DCDBE0001FF90 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				503D30971C9DCDBE0001FF90 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		503D30921C9DCDBE0001FF90 /* CollapsableOptions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 503D30C01C9DCDBE0001FF90 /* Build configuration list for PBXNativeTarget "CollapsableOptions" */;
+			buildPhases = (
+				503D308F1C9DCDBE0001FF90 /* Sources */,
+				503D30901C9DCDBE0001FF90 /* Frameworks */,
+				503D30911C9DCDBE0001FF90 /* Resources */,
+				503D30D71C9DD26C0001FF90 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CollapsableOptions;
+			productName = CollapsableTable;
+			productReference = 503D30931C9DCDBE0001FF90 /* CollapsableOptions.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		503D308B1C9DCDBE0001FF90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Robert Nash";
+				TargetAttributes = {
+					503D30921C9DCDBE0001FF90 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 503D308E1C9DCDBE0001FF90 /* Build configuration list for PBXProject "CollapsableOptions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 503D308A1C9DCDBE0001FF90;
+			productRefGroup = 503D30941C9DCDBE0001FF90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				503D30921C9DCDBE0001FF90 /* CollapsableOptions */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		503D30911C9DCDBE0001FF90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F4907F1C9DD68C000CFB95 /* LaunchScreen.storyboard in Resources */,
+				503D30D31C9DCE290001FF90 /* MenuSectionHeaderView.xib in Resources */,
+				503D30A31C9DCDBE0001FF90 /* Assets.xcassets in Resources */,
+				50F490801C9DD68C000CFB95 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		503D308F1C9DCDBE0001FF90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503D30D11C9DCE290001FF90 /* MenuSection.m in Sources */,
+				503D30D01C9DCE290001FF90 /* FakeModelBuilder.m in Sources */,
+				503D30D21C9DCE290001FF90 /* MenuSectionHeaderView.m in Sources */,
+				503D309E1C9DCDBE0001FF90 /* ViewController.m in Sources */,
+				503D309B1C9DCDBE0001FF90 /* AppDelegate.m in Sources */,
+				503D30981C9DCDBE0001FF90 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50F4907B1C9DD68C000CFB95 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50F4907C1C9DD68C000CFB95 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		50F4907D1C9DD68C000CFB95 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50F4907E1C9DD68C000CFB95 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		503D30BE1C9DCDBE0001FF90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		503D30BF1C9DCDBE0001FF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		503D30C11C9DCDBE0001FF90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CollapsableOptions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.CollapsableOptions;
+				PRODUCT_NAME = CollapsableOptions;
+			};
+			name = Debug;
+		};
+		503D30C21C9DCDBE0001FF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CollapsableOptions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.CollapsableOptions;
+				PRODUCT_NAME = CollapsableOptions;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		503D308E1C9DCDBE0001FF90 /* Build configuration list for PBXProject "CollapsableOptions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503D30BE1C9DCDBE0001FF90 /* Debug */,
+				503D30BF1C9DCDBE0001FF90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		503D30C01C9DCDBE0001FF90 /* Build configuration list for PBXNativeTarget "CollapsableOptions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503D30C11C9DCDBE0001FF90 /* Debug */,
+				503D30C21C9DCDBE0001FF90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 503D308B1C9DCDBE0001FF90 /* Project object */;
+}

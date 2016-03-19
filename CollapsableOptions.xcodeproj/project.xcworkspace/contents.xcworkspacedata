@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CollapsableTable.xcodeproj">
+      location = "self:/Users/robertnash/Code/Objective-C/CollapsableOptions/CollapsableOptions.xcodeproj">
    </FileRef>
 </Workspace>
