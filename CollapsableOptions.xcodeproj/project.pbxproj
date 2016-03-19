@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		503D30981C9DCDBE0001FF90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D30971C9DCDBE0001FF90 /* main.m */; };
-		503D309B1C9DCDBE0001FF90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D309A1C9DCDBE0001FF90 /* AppDelegate.m */; };
-		503D309E1C9DCDBE0001FF90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D309D1C9DCDBE0001FF90 /* ViewController.m */; };
-		503D30A31C9DCDBE0001FF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503D30A21C9DCDBE0001FF90 /* Assets.xcassets */; };
-		503D30D01C9DCE290001FF90 /* FakeModelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D30CA1C9DCE290001FF90 /* FakeModelBuilder.m */; };
-		503D30D11C9DCE290001FF90 /* MenuSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D30CC1C9DCE290001FF90 /* MenuSection.m */; };
-		503D30D21C9DCE290001FF90 /* MenuSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D30CE1C9DCE290001FF90 /* MenuSectionHeaderView.m */; };
-		503D30D31C9DCE290001FF90 /* MenuSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503D30CF1C9DCE290001FF90 /* MenuSectionHeaderView.xib */; };
-		503D30D51C9DD26B0001FF90 /* CollapsableTableKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503D30D41C9DD26B0001FF90 /* CollapsableTableKit.framework */; };
-		503D30D61C9DD26B0001FF90 /* CollapsableTableKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 503D30D41C9DD26B0001FF90 /* CollapsableTableKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		50F4907F1C9DD68C000CFB95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F4907B1C9DD68C000CFB95 /* LaunchScreen.storyboard */; };
 		50F490801C9DD68C000CFB95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F4907D1C9DD68C000CFB95 /* Main.storyboard */; };
+		50F490831C9DD95D000CFB95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F490821C9DD95D000CFB95 /* AppDelegate.m */; };
+		50F490861C9DD968000CFB95 /* FakeModelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F490851C9DD968000CFB95 /* FakeModelBuilder.m */; };
+		50F490891C9DD975000CFB95 /* MenuSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F490881C9DD975000CFB95 /* MenuSection.m */; };
+		50F4908D1C9DD97F000CFB95 /* MenuSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F4908B1C9DD97F000CFB95 /* MenuSectionHeaderView.m */; };
+		50F4908E1C9DD97F000CFB95 /* MenuSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F4908C1C9DD97F000CFB95 /* MenuSectionHeaderView.xib */; };
+		50F490911C9DD98D000CFB95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F490901C9DD98D000CFB95 /* ViewController.m */; };
+		50F490931C9DD99A000CFB95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F490921C9DD99A000CFB95 /* Assets.xcassets */; };
+		50F490951C9DD9A4000CFB95 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50F490941C9DD9A4000CFB95 /* Info.plist */; };
+		50F490971C9DD9B2000CFB95 /* CollapsableTableKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F490961C9DD9B2000CFB95 /* CollapsableTableKit.framework */; };
+		50F490991C9DD9E7000CFB95 /* CollapsableTableKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50F490961C9DD9B2000CFB95 /* CollapsableTableKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				503D30D61C9DD26B0001FF90 /* CollapsableTableKit.framework in Embed Frameworks */,
+				50F490991C9DD9E7000CFB95 /* CollapsableTableKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,22 +39,22 @@
 /* Begin PBXFileReference section */
 		503D30931C9DCDBE0001FF90 /* CollapsableOptions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollapsableOptions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		503D30971C9DCDBE0001FF90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../CollapsableOptions/main.m; sourceTree = "<group>"; };
-		503D30991C9DCDBE0001FF90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../CollapsableOptions/AppDelegate.h; sourceTree = "<group>"; };
-		503D309A1C9DCDBE0001FF90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../CollapsableOptions/AppDelegate.m; sourceTree = "<group>"; };
-		503D309C1C9DCDBE0001FF90 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../CollapsableOptions/ViewController.h; sourceTree = "<group>"; };
-		503D309D1C9DCDBE0001FF90 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../CollapsableOptions/ViewController.m; sourceTree = "<group>"; };
-		503D30A21C9DCDBE0001FF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../CollapsableOptions/Assets.xcassets; sourceTree = "<group>"; };
-		503D30A71C9DCDBE0001FF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../CollapsableOptions/Info.plist; sourceTree = "<group>"; };
-		503D30C91C9DCE290001FF90 /* FakeModelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FakeModelBuilder.h; path = ../CollapsableOptions/FakeModelBuilder.h; sourceTree = "<group>"; };
-		503D30CA1C9DCE290001FF90 /* FakeModelBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeModelBuilder.m; path = ../CollapsableOptions/FakeModelBuilder.m; sourceTree = "<group>"; };
-		503D30CB1C9DCE290001FF90 /* MenuSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuSection.h; path = ../CollapsableOptions/MenuSection.h; sourceTree = "<group>"; };
-		503D30CC1C9DCE290001FF90 /* MenuSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuSection.m; path = ../CollapsableOptions/MenuSection.m; sourceTree = "<group>"; };
-		503D30CD1C9DCE290001FF90 /* MenuSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuSectionHeaderView.h; path = ../CollapsableOptions/MenuSectionHeaderView.h; sourceTree = "<group>"; };
-		503D30CE1C9DCE290001FF90 /* MenuSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuSectionHeaderView.m; path = ../CollapsableOptions/MenuSectionHeaderView.m; sourceTree = "<group>"; };
-		503D30CF1C9DCE290001FF90 /* MenuSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuSectionHeaderView.xib; path = ../CollapsableOptions/MenuSectionHeaderView.xib; sourceTree = "<group>"; };
-		503D30D41C9DD26B0001FF90 /* CollapsableTableKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CollapsableTableKit.framework; path = ../Carthage/Build/iOS/CollapsableTableKit.framework; sourceTree = "<group>"; };
 		50F4907C1C9DD68C000CFB95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CollapsableOptions/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		50F4907E1C9DD68C000CFB95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CollapsableOptions/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		50F490811C9DD95D000CFB95 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CollapsableOptions/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		50F490821C9DD95D000CFB95 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = CollapsableOptions/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		50F490841C9DD968000CFB95 /* FakeModelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FakeModelBuilder.h; path = CollapsableOptions/FakeModelBuilder.h; sourceTree = SOURCE_ROOT; };
+		50F490851C9DD968000CFB95 /* FakeModelBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeModelBuilder.m; path = CollapsableOptions/FakeModelBuilder.m; sourceTree = SOURCE_ROOT; };
+		50F490871C9DD975000CFB95 /* MenuSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuSection.h; path = CollapsableOptions/MenuSection.h; sourceTree = SOURCE_ROOT; };
+		50F490881C9DD975000CFB95 /* MenuSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuSection.m; path = CollapsableOptions/MenuSection.m; sourceTree = SOURCE_ROOT; };
+		50F4908A1C9DD97F000CFB95 /* MenuSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuSectionHeaderView.h; path = CollapsableOptions/MenuSectionHeaderView.h; sourceTree = SOURCE_ROOT; };
+		50F4908B1C9DD97F000CFB95 /* MenuSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuSectionHeaderView.m; path = CollapsableOptions/MenuSectionHeaderView.m; sourceTree = SOURCE_ROOT; };
+		50F4908C1C9DD97F000CFB95 /* MenuSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuSectionHeaderView.xib; path = CollapsableOptions/MenuSectionHeaderView.xib; sourceTree = SOURCE_ROOT; };
+		50F4908F1C9DD98D000CFB95 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = CollapsableOptions/ViewController.h; sourceTree = SOURCE_ROOT; };
+		50F490901C9DD98D000CFB95 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = CollapsableOptions/ViewController.m; sourceTree = SOURCE_ROOT; };
+		50F490921C9DD99A000CFB95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CollapsableOptions/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		50F490941C9DD9A4000CFB95 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CollapsableOptions/Info.plist; sourceTree = SOURCE_ROOT; };
+		50F490961C9DD9B2000CFB95 /* CollapsableTableKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CollapsableTableKit.framework; path = Carthage/Build/iOS/CollapsableTableKit.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				503D30D51C9DD26B0001FF90 /* CollapsableTableKit.framework in Frameworks */,
+				50F490971C9DD9B2000CFB95 /* CollapsableTableKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,22 +88,22 @@
 		503D30951C9DCDBE0001FF90 /* CollapsableOptions */ = {
 			isa = PBXGroup;
 			children = (
-				503D30D41C9DD26B0001FF90 /* CollapsableTableKit.framework */,
-				503D30991C9DCDBE0001FF90 /* AppDelegate.h */,
-				503D309A1C9DCDBE0001FF90 /* AppDelegate.m */,
-				503D30C91C9DCE290001FF90 /* FakeModelBuilder.h */,
-				503D30CA1C9DCE290001FF90 /* FakeModelBuilder.m */,
-				503D30CB1C9DCE290001FF90 /* MenuSection.h */,
-				503D30CC1C9DCE290001FF90 /* MenuSection.m */,
-				503D30CD1C9DCE290001FF90 /* MenuSectionHeaderView.h */,
-				503D30CE1C9DCE290001FF90 /* MenuSectionHeaderView.m */,
-				503D30CF1C9DCE290001FF90 /* MenuSectionHeaderView.xib */,
-				503D309C1C9DCDBE0001FF90 /* ViewController.h */,
-				503D309D1C9DCDBE0001FF90 /* ViewController.m */,
+				50F490961C9DD9B2000CFB95 /* CollapsableTableKit.framework */,
+				50F490811C9DD95D000CFB95 /* AppDelegate.h */,
+				50F490821C9DD95D000CFB95 /* AppDelegate.m */,
+				50F490841C9DD968000CFB95 /* FakeModelBuilder.h */,
+				50F490851C9DD968000CFB95 /* FakeModelBuilder.m */,
+				50F490871C9DD975000CFB95 /* MenuSection.h */,
+				50F490881C9DD975000CFB95 /* MenuSection.m */,
+				50F4908A1C9DD97F000CFB95 /* MenuSectionHeaderView.h */,
+				50F4908B1C9DD97F000CFB95 /* MenuSectionHeaderView.m */,
+				50F4908F1C9DD98D000CFB95 /* ViewController.h */,
+				50F490901C9DD98D000CFB95 /* ViewController.m */,
+				50F4908C1C9DD97F000CFB95 /* MenuSectionHeaderView.xib */,
 				50F4907B1C9DD68C000CFB95 /* LaunchScreen.storyboard */,
 				50F4907D1C9DD68C000CFB95 /* Main.storyboard */,
-				503D30A21C9DCDBE0001FF90 /* Assets.xcassets */,
-				503D30A71C9DCDBE0001FF90 /* Info.plist */,
+				50F490921C9DD99A000CFB95 /* Assets.xcassets */,
+				50F490941C9DD9A4000CFB95 /* Info.plist */,
 				503D30961C9DCDBE0001FF90 /* Supporting Files */,
 			);
 			name = CollapsableOptions;
@@ -175,9 +176,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F4908E1C9DD97F000CFB95 /* MenuSectionHeaderView.xib in Resources */,
 				50F4907F1C9DD68C000CFB95 /* LaunchScreen.storyboard in Resources */,
-				503D30D31C9DCE290001FF90 /* MenuSectionHeaderView.xib in Resources */,
-				503D30A31C9DCDBE0001FF90 /* Assets.xcassets in Resources */,
+				50F490931C9DD99A000CFB95 /* Assets.xcassets in Resources */,
+				50F490951C9DD9A4000CFB95 /* Info.plist in Resources */,
 				50F490801C9DD68C000CFB95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,11 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				503D30D11C9DCE290001FF90 /* MenuSection.m in Sources */,
-				503D30D01C9DCE290001FF90 /* FakeModelBuilder.m in Sources */,
-				503D30D21C9DCE290001FF90 /* MenuSectionHeaderView.m in Sources */,
-				503D309E1C9DCDBE0001FF90 /* ViewController.m in Sources */,
-				503D309B1C9DCDBE0001FF90 /* AppDelegate.m in Sources */,
+				50F490911C9DD98D000CFB95 /* ViewController.m in Sources */,
+				50F490891C9DD975000CFB95 /* MenuSection.m in Sources */,
+				50F490861C9DD968000CFB95 /* FakeModelBuilder.m in Sources */,
+				50F4908D1C9DD97F000CFB95 /* MenuSectionHeaderView.m in Sources */,
+				50F490831C9DD95D000CFB95 /* AppDelegate.m in Sources */,
 				503D30981C9DCDBE0001FF90 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
