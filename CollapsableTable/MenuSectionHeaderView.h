@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Robert Nash. All rights reserved.
 //
 
-#import <CollapsableTable/CollapsableTable.h>
+#import <CollapsableTableKit/CollapsableTableKit.h>
 
 @interface MenuSectionHeaderView : UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol>
 

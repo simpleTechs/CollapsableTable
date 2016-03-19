@@ -1,9 +1,9 @@
 //
 //  main.m
-//  Example
+//  CollapsableTable
 //
-//  Created by Robert Nash on 08/09/2015.
-//  Copyright (c) 2015 Robert Nash. All rights reserved.
+//  Created by Robert Nash on 19/03/2016.
+//  Copyright © 2016 Robert Nash. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
