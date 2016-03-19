@@ -1,5 +1,5 @@
-Collapsable Table
-=================
+Collapsable Options
+===================
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=plastic&label=Legal)](https://raw.githubusercontent.com/rob-nash/InfiniteScroll/master/Licence.md)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-Greene.svg?style=plastic)](https://github.com/Carthage/Carthage)
 
@@ -7,13 +7,13 @@ Collapsable Table
 
 <sup>XCode 6.4+ iOS 8.0+</sup>
 
-A subclass of UIViewController. The creative design is 100% the responsibility of the implementing developer. So plenty of freedom to create any look.
+Example implementations of [CollapsableTableKit](https://github.com/rob-nash/CollapsableTableKit.git).
 
 ![](http://i.imgur.com/jDq37Ip.gif?1)
 ![](http://i.imgur.com/77YQhPE.gif?1)
 
 ##Demo
-Try the Demo App by running the **Example** scheme.
+Try the Demo App by running the **Example** schemes.
 
 ## Dependencies
 
@@ -22,11 +22,11 @@ Try the Demo App by running the **Example** scheme.
 ## Installation with Carthage
 Add the following to your Cartfile.
 
-* github "https://github.com/rob-nash/CollapsableTable" >= 1.0.0
+* github "https://github.com/rob-nash/CollapsableOptions" >= 1.0.0
 
 After running Carthage, add each of the following frameworks to your project, as embedded frameworks. See [Carthage](https://github.com/Carthage/Carthage) for details.
 
-* CollapsableTable.framework
+* CollapsableOptions.framework
 * CollapsableTableKit.framework
 
 You may need to add a framework search path to your build settings that points at the carthage build folder.
