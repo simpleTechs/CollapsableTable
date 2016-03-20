@@ -9,17 +9,18 @@
 /* Begin PBXBuildFile section */
 		501C23EA1C9EE7EB003E3666 /* MeterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C23E91C9EE7EB003E3666 /* MeterView.xib */; };
 		501C23EE1C9EE864003E3666 /* MeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C23ED1C9EE864003E3666 /* MeterView.m */; };
+		501C23F31C9EED32003E3666 /* ArrowSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C23F11C9EED32003E3666 /* ArrowSectionHeaderView.m */; };
+		501C23F41C9EED32003E3666 /* ArrowSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C23F21C9EED32003E3666 /* ArrowSectionHeaderView.xib */; };
+		501C23F61C9EEDFD003E3666 /* MeterSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C23F51C9EEDFD003E3666 /* MeterSectionHeaderView.xib */; };
+		501C23FA1C9EEE0F003E3666 /* MeterSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C23F91C9EEE0F003E3666 /* MeterSectionHeaderView.m */; };
 		503D30981C9DCDBE0001FF90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D30971C9DCDBE0001FF90 /* main.m */; };
 		50F4907F1C9DD68C000CFB95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F4907B1C9DD68C000CFB95 /* LaunchScreen.storyboard */; };
 		50F490801C9DD68C000CFB95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F4907D1C9DD68C000CFB95 /* Main.storyboard */; };
 		50F490831C9DD95D000CFB95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F490821C9DD95D000CFB95 /* AppDelegate.m */; };
 		50F490861C9DD968000CFB95 /* FakeModelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F490851C9DD968000CFB95 /* FakeModelBuilder.m */; };
 		50F490891C9DD975000CFB95 /* MenuSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F490881C9DD975000CFB95 /* MenuSection.m */; };
-		50F4908D1C9DD97F000CFB95 /* MenuSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F4908B1C9DD97F000CFB95 /* MenuSectionHeaderView.m */; };
-		50F4908E1C9DD97F000CFB95 /* MenuSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F4908C1C9DD97F000CFB95 /* MenuSectionHeaderView.xib */; };
 		50F490911C9DD98D000CFB95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F490901C9DD98D000CFB95 /* ViewController.m */; };
 		50F490931C9DD99A000CFB95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F490921C9DD99A000CFB95 /* Assets.xcassets */; };
-		50F490951C9DD9A4000CFB95 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50F490941C9DD9A4000CFB95 /* Info.plist */; };
 		50F490971C9DD9B2000CFB95 /* CollapsableTableKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F490961C9DD9B2000CFB95 /* CollapsableTableKit.framework */; };
 		50F490991C9DD9E7000CFB95 /* CollapsableTableKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50F490961C9DD9B2000CFB95 /* CollapsableTableKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -42,6 +43,12 @@
 		501C23E91C9EE7EB003E3666 /* MeterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MeterView.xib; path = CollapsableOptions/MeterView.xib; sourceTree = SOURCE_ROOT; };
 		501C23EC1C9EE864003E3666 /* MeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterView.h; sourceTree = SOURCE_ROOT; };
 		501C23ED1C9EE864003E3666 /* MeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeterView.m; sourceTree = SOURCE_ROOT; };
+		501C23F01C9EED32003E3666 /* ArrowSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrowSectionHeaderView.h; path = CollapsableOptions/ArrowSectionHeaderView.h; sourceTree = SOURCE_ROOT; };
+		501C23F11C9EED32003E3666 /* ArrowSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArrowSectionHeaderView.m; path = CollapsableOptions/ArrowSectionHeaderView.m; sourceTree = SOURCE_ROOT; };
+		501C23F21C9EED32003E3666 /* ArrowSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArrowSectionHeaderView.xib; path = CollapsableOptions/ArrowSectionHeaderView.xib; sourceTree = SOURCE_ROOT; };
+		501C23F51C9EEDFD003E3666 /* MeterSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeterSectionHeaderView.xib; sourceTree = SOURCE_ROOT; };
+		501C23F81C9EEE0F003E3666 /* MeterSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterSectionHeaderView.h; sourceTree = SOURCE_ROOT; };
+		501C23F91C9EEE0F003E3666 /* MeterSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeterSectionHeaderView.m; sourceTree = SOURCE_ROOT; };
 		503D30931C9DCDBE0001FF90 /* CollapsableOptions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollapsableOptions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		503D30971C9DCDBE0001FF90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../CollapsableOptions/main.m; sourceTree = "<group>"; };
 		50F4907C1C9DD68C000CFB95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CollapsableOptions/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
@@ -52,9 +59,6 @@
 		50F490851C9DD968000CFB95 /* FakeModelBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeModelBuilder.m; path = CollapsableOptions/FakeModelBuilder.m; sourceTree = SOURCE_ROOT; };
 		50F490871C9DD975000CFB95 /* MenuSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuSection.h; path = CollapsableOptions/MenuSection.h; sourceTree = SOURCE_ROOT; };
 		50F490881C9DD975000CFB95 /* MenuSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuSection.m; path = CollapsableOptions/MenuSection.m; sourceTree = SOURCE_ROOT; };
-		50F4908A1C9DD97F000CFB95 /* MenuSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuSectionHeaderView.h; path = CollapsableOptions/MenuSectionHeaderView.h; sourceTree = SOURCE_ROOT; };
-		50F4908B1C9DD97F000CFB95 /* MenuSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuSectionHeaderView.m; path = CollapsableOptions/MenuSectionHeaderView.m; sourceTree = SOURCE_ROOT; };
-		50F4908C1C9DD97F000CFB95 /* MenuSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuSectionHeaderView.xib; path = CollapsableOptions/MenuSectionHeaderView.xib; sourceTree = SOURCE_ROOT; };
 		50F4908F1C9DD98D000CFB95 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = CollapsableOptions/ViewController.h; sourceTree = SOURCE_ROOT; };
 		50F490901C9DD98D000CFB95 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = CollapsableOptions/ViewController.m; sourceTree = SOURCE_ROOT; };
 		50F490921C9DD99A000CFB95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CollapsableOptions/Assets.xcassets; sourceTree = SOURCE_ROOT; };
@@ -74,14 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		501C23E31C9EE781003E3666 /* MenuSectionHeaderView */ = {
+		501C23E31C9EE781003E3666 /* ArrowSectionHeaderView */ = {
 			isa = PBXGroup;
 			children = (
-				50F4908A1C9DD97F000CFB95 /* MenuSectionHeaderView.h */,
-				50F4908B1C9DD97F000CFB95 /* MenuSectionHeaderView.m */,
-				50F4908C1C9DD97F000CFB95 /* MenuSectionHeaderView.xib */,
+				501C23F01C9EED32003E3666 /* ArrowSectionHeaderView.h */,
+				501C23F11C9EED32003E3666 /* ArrowSectionHeaderView.m */,
+				501C23F21C9EED32003E3666 /* ArrowSectionHeaderView.xib */,
 			);
-			name = MenuSectionHeaderView;
+			name = ArrowSectionHeaderView;
 			sourceTree = "<group>";
 		};
 		501C23E41C9EE788003E3666 /* MenuSection */ = {
@@ -143,9 +147,29 @@
 			isa = PBXGroup;
 			children = (
 				501C23EB1C9EE85A003E3666 /* MeterView */,
-				501C23E31C9EE781003E3666 /* MenuSectionHeaderView */,
+				501C23F71C9EEE02003E3666 /* MeterSectionHeaderView */,
+				501C23E31C9EE781003E3666 /* ArrowSectionHeaderView */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		501C23F71C9EEE02003E3666 /* MeterSectionHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				501C23F81C9EEE0F003E3666 /* MeterSectionHeaderView.h */,
+				501C23F91C9EEE0F003E3666 /* MeterSectionHeaderView.m */,
+				501C23F51C9EEDFD003E3666 /* MeterSectionHeaderView.xib */,
+			);
+			name = MeterSectionHeaderView;
+			sourceTree = "<group>";
+		};
+		501C23FB1C9EFC42003E3666 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				501C23E51C9EE78D003E3666 /* FakeModelBuilder */,
+				501C23E41C9EE788003E3666 /* MenuSection */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		503D308A1C9DCDBE0001FF90 = {
@@ -169,8 +193,7 @@
 			children = (
 				50F490961C9DD9B2000CFB95 /* CollapsableTableKit.framework */,
 				501C23E61C9EE794003E3666 /* AppDelegate */,
-				501C23E51C9EE78D003E3666 /* FakeModelBuilder */,
-				501C23E41C9EE788003E3666 /* MenuSection */,
+				501C23FB1C9EFC42003E3666 /* Model */,
 				501C23EF1C9EE86E003E3666 /* Views */,
 				501C23E71C9EE79A003E3666 /* ViewController */,
 				501C23E81C9EE7B1003E3666 /* Storyboards */,
@@ -249,10 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				501C23EA1C9EE7EB003E3666 /* MeterView.xib in Resources */,
-				50F4908E1C9DD97F000CFB95 /* MenuSectionHeaderView.xib in Resources */,
+				501C23F61C9EEDFD003E3666 /* MeterSectionHeaderView.xib in Resources */,
 				50F4907F1C9DD68C000CFB95 /* LaunchScreen.storyboard in Resources */,
 				50F490931C9DD99A000CFB95 /* Assets.xcassets in Resources */,
-				50F490951C9DD9A4000CFB95 /* Info.plist in Resources */,
+				501C23F41C9EED32003E3666 /* ArrowSectionHeaderView.xib in Resources */,
 				50F490801C9DD68C000CFB95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,10 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				50F490911C9DD98D000CFB95 /* ViewController.m in Sources */,
+				501C23FA1C9EEE0F003E3666 /* MeterSectionHeaderView.m in Sources */,
 				50F490891C9DD975000CFB95 /* MenuSection.m in Sources */,
 				50F490861C9DD968000CFB95 /* FakeModelBuilder.m in Sources */,
-				50F4908D1C9DD97F000CFB95 /* MenuSectionHeaderView.m in Sources */,
 				501C23EE1C9EE864003E3666 /* MeterView.m in Sources */,
+				501C23F31C9EED32003E3666 /* ArrowSectionHeaderView.m in Sources */,
 				50F490831C9DD95D000CFB95 /* AppDelegate.m in Sources */,
 				503D30981C9DCDBE0001FF90 /* main.m in Sources */,
 			);

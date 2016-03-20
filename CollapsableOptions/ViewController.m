@@ -7,11 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "MenuSectionHeaderView.h"
+#import "ArrowSectionHeaderView.h"
+#import "MeterSectionHeaderView.h"
 #import "FakeModelBuilder.h"
 
 @interface ViewController ()
-@property (strong, nonatomic) NSArray <RRNCollapsableTableViewSectionModelProtocol> *menu;
+@property (strong, nonatomic) NSArray <RRNCollapsableTableViewSectionModelProtocol> *customModel;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
@@ -24,7 +25,7 @@
 }
 
 -(NSString *)sectionHeaderNibName {
-    return NSStringFromClass([MenuSectionHeaderView class]);
+    return [[NSProcessInfo processInfo] environment][@"SECTION_HEADER"];//Provided by scheme
 }
 
 -(BOOL)singleOpenSelectionOnly {
@@ -33,15 +34,15 @@
 
 #pragma mark - Menu
 
--(NSArray <RRNCollapsableTableViewSectionModelProtocol> *)menu {
-    if (_menu == nil) {
-        _menu = (NSArray <RRNCollapsableTableViewSectionModelProtocol> *)[FakeModelBuilder buildMenu];
+-(NSArray <RRNCollapsableTableViewSectionModelProtocol> *)customModel {
+    if (_customModel == nil) {
+        _customModel = (NSArray <RRNCollapsableTableViewSectionModelProtocol> *)[FakeModelBuilder buildModel];
     }
-    return _menu;
+    return _customModel;
 }
 
 -(NSArray <RRNCollapsableTableViewSectionModelProtocol> *)model {
-    return self.menu;
+    return self.customModel;
 }
 
 #pragma mark - UITableView
@@ -51,15 +52,15 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return [MenuSectionHeaderView minimumHeight];
+    return [MeterSectionHeaderView minimumHeight];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-//    id <RRNCollapsableTableViewSectionModelProtocol> mSection = self.menu[indexPath.section];
-//    id item = mSection.items[indexPath.row];
-    
-    return [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    id <RRNCollapsableTableViewSectionModelProtocol> mSection = self.customModel[indexPath.section];
+    NSString *item = mSection.items[indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    cell.textLabel.text = item;
+    return cell;
 }
 
 @end

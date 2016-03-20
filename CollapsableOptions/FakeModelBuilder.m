@@ -10,48 +10,25 @@
 
 @implementation FakeModelBuilder
 
-+(NSArray <MenuSection *> *)buildMenu {
-    
++(NSArray <MenuSection *> *)buildModel {
     NSMutableArray *collector = [NSMutableArray new];
-    
-    for (NSInteger i = 0; i < 5; i++) {
-        
-        MenuSection *section = [MenuSection new];
-        
-        switch (i) {
-            case 0:
-                section.title = @"Option 1";
-                section.isVisible = @YES;
-                section.items = @[[NSNull null], [NSNull null], [NSNull null]];
-                break;
-                
-            case 1:
-                section.title = @"Option 2";
-                section.items = @[[NSNull null], [NSNull null], [NSNull null], [NSNull null], [NSNull null], [NSNull null]];
-                break;
-                
-            case 2:
-                section.title = @"Option 3";
-                section.items = @[[NSNull null], [NSNull null], [NSNull null]];
-                break;
-                
-            case 3:
-                section.title = @"Option 4";
-                section.items = @[[NSNull null], [NSNull null]];
-                break;
-                
-            case 4:
-                section.title = @"Option 5";
-                section.items = @[[NSNull null], [NSNull null], [NSNull null], [NSNull null]];
-                break;
-                
-            default:
-                break;
-        }
-        
+    MenuSection *section;
+    for (NSInteger i = 0; i < 50; i++) {
+        section = [MenuSection new];
+        section.title = [NSString stringWithFormat:@"Option %li", (long)i+1];
+        section.isVisible = @(i == 0);
+        section.items = [self randomItems];
         [collector addObject:section];
     }
-    
+    return [collector copy];
+}
+
++(NSArray *)randomItems {
+    NSMutableArray *collector = [@[] mutableCopy];
+    NSInteger count = 1 + arc4random() % 5;
+    for (NSInteger i = 0; i < count; i++) {
+        [collector addObject:[NSString stringWithFormat:@"Item %li", (long)i+1]];
+    }
     return [collector copy];
 }
 

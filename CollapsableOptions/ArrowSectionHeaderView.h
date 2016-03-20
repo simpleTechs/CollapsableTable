@@ -1,5 +1,5 @@
 //
-//  MenuSectionHeaderView.h
+//  ArrowSectionHeaderView.h
 //  Example
 //
 //  Created by Robert Nash on 08/09/2015.
@@ -8,7 +8,7 @@
 
 #import <CollapsableTableKit/CollapsableTableKit.h>
 
-@interface MenuSectionHeaderView : UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol>
+@interface ArrowSectionHeaderView : UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol>
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 

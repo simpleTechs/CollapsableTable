@@ -8,10 +8,11 @@
 
 #import "MeterView.h"
 
-#define RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 #define LIGHT_GREY RGB(170, 170, 170)
-#define DARK_GREY RGB(85, 85, 85)
+#define DARK_GREY RGB(120, 120, 120)
 #define ORANGE RGB(255, 127, 0)
+#define WHITE RGB(200, 200, 200)
+#define DURATION .1
 
 @interface MeterView ()
 @property (weak, nonatomic) IBOutlet UIView *top;
@@ -31,52 +32,70 @@
 }
 
 -(void)awakeFromNib {
-    self.top.backgroundColor = LIGHT_GREY;
+    self.top.backgroundColor = WHITE;
+    self.middle.backgroundColor = LIGHT_GREY;
+    self.bottom.backgroundColor = DARK_GREY;
 }
 
--(void)lightUp:(BOOL)animated {
+-(void)lightUpAnimated:(BOOL)animated {
+    
+    CGFloat middleAlpha = 1;
+    CGFloat bottomAlpha = 1;
+    
     if (animated) {
-        [self lightUpAnimatedWithMiddleColour:DARK_GREY
-                             withBottomColour:ORANGE];
+        [self lightUpAnimatedWithMiddleAlpha:middleAlpha
+                             withBottomAlpha:bottomAlpha];
     } else {
-        self.middle.backgroundColor = DARK_GREY;
-        self.bottom.backgroundColor = ORANGE;
+        self.middle.alpha = middleAlpha;
+        self.bottom.alpha = bottomAlpha;
     }
 }
 
--(void)fadeOut:(BOOL)animated {
+-(void)fadeOutAnimated:(BOOL)animated {
+    
+    CGFloat middleAlpha = 41/100.0;
+    CGFloat bottomAlpha = 5/100.0f;
+    
     if (animated) {
-        [self fadeOutAnimatedWithMiddleColour:[DARK_GREY colorWithAlphaComponent:41/100.0]
-                             withBottomColour:[ORANGE colorWithAlphaComponent:5/100.0]];
+        [self fadeOutAnimatedWithMiddleAlpha:middleAlpha
+                             withBottomAlpha:bottomAlpha];
     } else {
-        self.middle.backgroundColor = [DARK_GREY colorWithAlphaComponent:41/100.0];
-        self.bottom.backgroundColor = [ORANGE colorWithAlphaComponent:5/100.0];
+        self.middle.alpha = middleAlpha;
+        self.bottom.alpha = bottomAlpha;
     }
 }
 
--(void)lightUpAnimatedWithMiddleColour:(UIColor *)middle withBottomColour:(UIColor *)bottom {
-    [UIView animateWithDuration:.3
+-(void)lightUpAnimatedWithMiddleAlpha:(CGFloat)middleAlpha
+                      withBottomAlpha:(CGFloat)bottomAlpha {
+    
+    [UIView animateWithDuration:DURATION
+                          delay:0
+                        options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveLinear
                      animations:^{
-                         self.middle.backgroundColor = middle;
+                         self.middle.alpha = middleAlpha;
                      } completion:^(BOOL finished) {
                          dispatch_async(self.sleepQueue, ^{
                              sleep(.3);
                              dispatch_async(dispatch_get_main_queue(), ^{
-                                 self.bottom.backgroundColor = bottom;
+                                 self.bottom.alpha = bottomAlpha;
                              });
                          });
                      }];
 }
 
--(void)fadeOutAnimatedWithMiddleColour:(UIColor *)middle withBottomColour:(UIColor *)bottom {
-    [UIView animateWithDuration:.3
+-(void)fadeOutAnimatedWithMiddleAlpha:(CGFloat)middleAlpha
+                      withBottomAlpha:(CGFloat)bottomAlpha {
+    
+    [UIView animateWithDuration:DURATION
+                          delay:0
+                        options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveLinear
                      animations:^{
-                         self.bottom.backgroundColor = middle;
+                         self.bottom.alpha = bottomAlpha;
                      } completion:^(BOOL finished) {
                          dispatch_async(self.sleepQueue, ^{
                              sleep(.3);
                              dispatch_async(dispatch_get_main_queue(), ^{
-                                 self.middle.backgroundColor = bottom;
+                                 self.middle.alpha = middleAlpha;
                              });
                          });
                      }];

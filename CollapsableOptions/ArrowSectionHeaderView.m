@@ -1,20 +1,20 @@
 //
-//  MenuSectionHeaderView.m
+//  ArrowSectionHeaderView.m
 //  Example
 //
 //  Created by Robert Nash on 08/09/2015.
 //  Copyright (c) 2015 Robert Nash. All rights reserved.
 //
 
-#import "MenuSectionHeaderView.h"
+#import "ArrowSectionHeaderView.h"
 
 #define DEGREES_TO_RADIANS(x) (M_PI * (x) / 180.0)
 
-@interface MenuSectionHeaderView ()
+@interface ArrowSectionHeaderView ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end
 
-@implementation MenuSectionHeaderView {
+@implementation ArrowSectionHeaderView {
     BOOL isRotating;
 }
 
