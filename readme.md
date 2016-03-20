@@ -9,8 +9,9 @@ Collapsable Options
 
 Example implementations of [CollapsableTableKit](https://github.com/rob-nash/CollapsableTableKit.git).
 
-![](http://i.imgur.com/jDq37Ip.gif?1)
-![](http://i.imgur.com/77YQhPE.gif?1)
+![](http://i.imgur.com/QfLjuZc.gif?1)
+![](http://i.imgur.com/0Uk9ACL.gif?1)
+![](http://i.imgur.com/ECWZHTt.gif?1)
 
 ##Demo
 Try the variety of examples in the Demo App. Switch between the examples by switching schemes.
