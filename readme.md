@@ -13,7 +13,7 @@ Example implementations of [CollapsableTableKit](https://github.com/rob-nash/Col
 ![](http://i.imgur.com/77YQhPE.gif?1)
 
 ##Demo
-Try the Demo App by running the **Example** schemes.
+Try the variety of examples in the Demo App. Switch between the examples by switching schemes.
 
 ## Dependencies
 
