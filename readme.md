@@ -7,7 +7,7 @@ Collapsable Options
 
 <sup>XCode 6.4+ iOS 8.0+</sup>
 
-Example implementations of [CollapsableTableKit](https://github.com/rob-nash/CollapsableTableKit.git).
+Example implementations of [CollapsableTableKit](https://github.com/rob-nash/CollapsableTableKit.git). As you can see, I'm not a designer. If anyone would like to send me a design, I will implement it!
 
 ![](http://i.imgur.com/QfLjuZc.gif?1)
 ![](http://i.imgur.com/0Uk9ACL.gif?1)
