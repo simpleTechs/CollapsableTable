@@ -68,8 +68,4 @@
     }
 }
 
-+(CGFloat)minimumHeight {
-    return 44.0f;
-}
-
 @end

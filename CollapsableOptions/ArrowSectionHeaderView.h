@@ -12,6 +12,4 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
-+(CGFloat)minimumHeight;
-
 @end

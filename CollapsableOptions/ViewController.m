@@ -52,14 +52,14 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return [MeterSectionHeaderView minimumHeight];
+    return 44.0;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    id <RRNCollapsableTableViewSectionModelProtocol> mSection = self.customModel[indexPath.section];
-    NSString *item = mSection.items[indexPath.row];
+    id <RRNCollapsableTableViewSectionModelProtocol> modelSection = self.customModel[indexPath.section];
+    NSString *title = modelSection.items[indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    cell.textLabel.text = item;
+    cell.textLabel.text = title;
     return cell;
 }
 
