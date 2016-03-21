@@ -1,9 +1,5 @@
 Collapsable Options
 ===================
-[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=plastic&label=Legal)](https://raw.githubusercontent.com/rob-nash/InfiniteScroll/master/Licence.md)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-Greene.svg?style=plastic)](https://github.com/Carthage/Carthage)
-
-##Description
 
 <sup>XCode 6.4+ iOS 8.0+</sup>
 
