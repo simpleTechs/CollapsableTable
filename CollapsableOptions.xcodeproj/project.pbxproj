@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5014C7311D796FF8000322FE /* CollapsableTableKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5014C7301D796FF8000322FE /* CollapsableTableKit.framework */; };
+		5014C7321D796FF8000322FE /* CollapsableTableKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5014C7301D796FF8000322FE /* CollapsableTableKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		501C23EA1C9EE7EB003E3666 /* MeterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C23E91C9EE7EB003E3666 /* MeterView.xib */; };
 		501C23EE1C9EE864003E3666 /* MeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C23ED1C9EE864003E3666 /* MeterView.m */; };
 		501C23F31C9EED32003E3666 /* ArrowSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C23F11C9EED32003E3666 /* ArrowSectionHeaderView.m */; };
@@ -24,18 +26,16 @@
 		50F490891C9DD975000CFB95 /* MenuSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F490881C9DD975000CFB95 /* MenuSection.m */; };
 		50F490911C9DD98D000CFB95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F490901C9DD98D000CFB95 /* ViewController.m */; };
 		50F490931C9DD99A000CFB95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F490921C9DD99A000CFB95 /* Assets.xcassets */; };
-		50F490971C9DD9B2000CFB95 /* CollapsableTableKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F490961C9DD9B2000CFB95 /* CollapsableTableKit.framework */; };
-		50F490991C9DD9E7000CFB95 /* CollapsableTableKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50F490961C9DD9B2000CFB95 /* CollapsableTableKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		503D30D71C9DD26C0001FF90 /* Embed Frameworks */ = {
+		5014C7331D796FF8000322FE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				50F490991C9DD9E7000CFB95 /* CollapsableTableKit.framework in Embed Frameworks */,
+				5014C7321D796FF8000322FE /* CollapsableTableKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5014C7301D796FF8000322FE /* CollapsableTableKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CollapsableTableKit.framework; path = Carthage/Build/iOS/CollapsableTableKit.framework; sourceTree = "<group>"; };
 		501C23E91C9EE7EB003E3666 /* MeterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MeterView.xib; path = CollapsableOptions/MeterView.xib; sourceTree = SOURCE_ROOT; };
 		501C23EC1C9EE864003E3666 /* MeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterView.h; sourceTree = SOURCE_ROOT; };
 		501C23ED1C9EE864003E3666 /* MeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeterView.m; sourceTree = SOURCE_ROOT; };
@@ -71,7 +72,6 @@
 		50F490901C9DD98D000CFB95 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = CollapsableOptions/ViewController.m; sourceTree = SOURCE_ROOT; };
 		50F490921C9DD99A000CFB95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CollapsableOptions/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		50F490941C9DD9A4000CFB95 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CollapsableOptions/Info.plist; sourceTree = SOURCE_ROOT; };
-		50F490961C9DD9B2000CFB95 /* CollapsableTableKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CollapsableTableKit.framework; path = Carthage/Build/iOS/CollapsableTableKit.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50F490971C9DD9B2000CFB95 /* CollapsableTableKit.framework in Frameworks */,
+				5014C7311D796FF8000322FE /* CollapsableTableKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +228,7 @@
 		503D308A1C9DCDBE0001FF90 = {
 			isa = PBXGroup;
 			children = (
+				5014C7301D796FF8000322FE /* CollapsableTableKit.framework */,
 				503D30951C9DCDBE0001FF90 /* CollapsableOptions */,
 				503D30941C9DCDBE0001FF90 /* Products */,
 			);
@@ -244,7 +245,6 @@
 		503D30951C9DCDBE0001FF90 /* CollapsableOptions */ = {
 			isa = PBXGroup;
 			children = (
-				50F490961C9DD9B2000CFB95 /* CollapsableTableKit.framework */,
 				501C23E61C9EE794003E3666 /* AppDelegate */,
 				501C23FB1C9EFC42003E3666 /* Model */,
 				501C23EF1C9EE86E003E3666 /* Views */,
@@ -276,7 +276,7 @@
 				503D308F1C9DCDBE0001FF90 /* Sources */,
 				503D30901C9DCDBE0001FF90 /* Frameworks */,
 				503D30911C9DCDBE0001FF90 /* Resources */,
-				503D30D71C9DD26C0001FF90 /* Embed Frameworks */,
+				5014C7331D796FF8000322FE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

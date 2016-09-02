@@ -12,22 +12,15 @@
 
 @interface ArrowSectionHeaderView ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @end
 
 @implementation ArrowSectionHeaderView {
     BOOL isRotating;
 }
 
-@synthesize interactionDelegate = _interactionDelegate;
-
--(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    
-    [super touchesEnded:touches withEvent:event];
-    
-    UITouch *touch = [[event allTouches] anyObject];
-    CGPoint point = [touch locationInView:self];
-    
-    [self.interactionDelegate userTappedView:self atPoint:point];
+-(void)updateTitle:(NSString *)title {
+    self.titleLabel.text = title;
 }
 
 -(void)openAnimated:(BOOL)animated {

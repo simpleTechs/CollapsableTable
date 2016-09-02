@@ -13,21 +13,10 @@
 @property (weak, nonatomic) IBOutlet UIView *meterContainerView;
 @property (weak, nonatomic) MeterView *meterView;
 @property (weak, nonatomic) IBOutlet UIView *customContentView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @end
 
 @implementation MeterSectionHeaderView
-
-@synthesize interactionDelegate = _interactionDelegate;
-
--(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    
-    [super touchesEnded:touches withEvent:event];
-    
-    UITouch *touch = [[event allTouches] anyObject];
-    CGPoint point = [touch locationInView:self];
-    
-    [self.interactionDelegate userTappedView:self atPoint:point];
-}
 
 -(void)awakeFromNib {
     self.customContentView.backgroundColor = RGB(87, 122, 190);
@@ -50,6 +39,10 @@
     constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[view]-0-|" options:0 metrics:nil views:views];
     [collector addObjectsFromArray:constraints];
     return [collector copy];
+}
+
+-(void)updateTitle:(NSString *)title {
+    self.titleLabel.text = title;
 }
 
 -(void)openAnimated:(BOOL)animated {

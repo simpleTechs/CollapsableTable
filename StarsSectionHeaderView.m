@@ -12,22 +12,15 @@
 @interface StarsSectionHeaderView ()
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *starLabels;
 @property (weak, nonatomic) IBOutlet UIView *customContentView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @end
 
 @implementation StarsSectionHeaderView {
     BOOL _isFlashing;
 }
 
-@synthesize interactionDelegate = _interactionDelegate;
-
--(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    
-    [super touchesEnded:touches withEvent:event];
-    
-    UITouch *touch = [[event allTouches] anyObject];
-    CGPoint point = [touch locationInView:self];
-    
-    [self.interactionDelegate userTappedView:self atPoint:point];
+-(void)updateTitle:(NSString *)title {
+    self.titleLabel.text = title;
 }
 
 -(void)openAnimated:(BOOL)animated {

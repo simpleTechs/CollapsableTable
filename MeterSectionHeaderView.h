@@ -8,8 +8,6 @@
 
 #import <CollapsableTableKit/CollapsableTableKit.h>
 
-@interface MeterSectionHeaderView : UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol>
-
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@interface MeterSectionHeaderView : RRNTableViewHeaderFooterView
 
 @end

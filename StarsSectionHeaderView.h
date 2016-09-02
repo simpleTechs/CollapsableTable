@@ -8,8 +8,6 @@
 
 #import <CollapsableTableKit/CollapsableTableKit.h>
 
-@interface StarsSectionHeaderView : UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol>
-
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@interface StarsSectionHeaderView : RRNTableViewHeaderFooterView
 
 @end
