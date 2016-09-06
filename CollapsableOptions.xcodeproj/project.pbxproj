@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500BB3DB1D7F4509003CF6B9 /* MeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 500BB3DA1D7F4509003CF6B9 /* MeterView.m */; };
+		500BB3DF1D7F4513003CF6B9 /* MeterSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 500BB3DD1D7F4513003CF6B9 /* MeterSectionHeaderView.m */; };
+		500BB3E01D7F4513003CF6B9 /* MeterSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 500BB3DE1D7F4513003CF6B9 /* MeterSectionHeaderView.xib */; };
+		500BB3E31D7F451F003CF6B9 /* UILabel+flash.m in Sources */ = {isa = PBXBuildFile; fileRef = 500BB3E21D7F451F003CF6B9 /* UILabel+flash.m */; };
+		500BB3E71D7F452A003CF6B9 /* StarsSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 500BB3E51D7F452A003CF6B9 /* StarsSectionHeaderView.m */; };
+		500BB3E81D7F452A003CF6B9 /* StarsSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 500BB3E61D7F452A003CF6B9 /* StarsSectionHeaderView.xib */; };
+		500BB3EA1D7F453B003CF6B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 500BB3E91D7F453B003CF6B9 /* main.m */; };
 		5014C7311D796FF8000322FE /* CollapsableTableKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5014C7301D796FF8000322FE /* CollapsableTableKit.framework */; };
 		5014C7321D796FF8000322FE /* CollapsableTableKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5014C7301D796FF8000322FE /* CollapsableTableKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		501C23EA1C9EE7EB003E3666 /* MeterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C23E91C9EE7EB003E3666 /* MeterView.xib */; };
-		501C23EE1C9EE864003E3666 /* MeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C23ED1C9EE864003E3666 /* MeterView.m */; };
 		501C23F31C9EED32003E3666 /* ArrowSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C23F11C9EED32003E3666 /* ArrowSectionHeaderView.m */; };
 		501C23F41C9EED32003E3666 /* ArrowSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C23F21C9EED32003E3666 /* ArrowSectionHeaderView.xib */; };
-		501C23F61C9EEDFD003E3666 /* MeterSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C23F51C9EEDFD003E3666 /* MeterSectionHeaderView.xib */; };
-		501C23FA1C9EEE0F003E3666 /* MeterSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C23F91C9EEE0F003E3666 /* MeterSectionHeaderView.m */; };
-		501C240A1C9F263C003E3666 /* UILabel+flash.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C24091C9F263C003E3666 /* UILabel+flash.m */; };
-		501C240C1C9F27EE003E3666 /* StarsSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C240B1C9F27EE003E3666 /* StarsSectionHeaderView.xib */; };
-		501C24101C9F27FD003E3666 /* StarsSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C240F1C9F27FD003E3666 /* StarsSectionHeaderView.m */; };
-		503D30981C9DCDBE0001FF90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D30971C9DCDBE0001FF90 /* main.m */; };
 		50F4907F1C9DD68C000CFB95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F4907B1C9DD68C000CFB95 /* LaunchScreen.storyboard */; };
 		50F490801C9DD68C000CFB95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F4907D1C9DD68C000CFB95 /* Main.storyboard */; };
 		50F490831C9DD95D000CFB95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F490821C9DD95D000CFB95 /* AppDelegate.m */; };
@@ -43,23 +43,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		500BB3D91D7F4509003CF6B9 /* MeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeterView.h; path = CollapsableOptions/MeterView.h; sourceTree = SOURCE_ROOT; };
+		500BB3DA1D7F4509003CF6B9 /* MeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeterView.m; path = CollapsableOptions/MeterView.m; sourceTree = SOURCE_ROOT; };
+		500BB3DC1D7F4513003CF6B9 /* MeterSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeterSectionHeaderView.h; path = CollapsableOptions/MeterSectionHeaderView.h; sourceTree = SOURCE_ROOT; };
+		500BB3DD1D7F4513003CF6B9 /* MeterSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeterSectionHeaderView.m; path = CollapsableOptions/MeterSectionHeaderView.m; sourceTree = SOURCE_ROOT; };
+		500BB3DE1D7F4513003CF6B9 /* MeterSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MeterSectionHeaderView.xib; path = CollapsableOptions/MeterSectionHeaderView.xib; sourceTree = SOURCE_ROOT; };
+		500BB3E11D7F451F003CF6B9 /* UILabel+flash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+flash.h"; path = "CollapsableOptions/UILabel+flash.h"; sourceTree = SOURCE_ROOT; };
+		500BB3E21D7F451F003CF6B9 /* UILabel+flash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+flash.m"; path = "CollapsableOptions/UILabel+flash.m"; sourceTree = SOURCE_ROOT; };
+		500BB3E41D7F452A003CF6B9 /* StarsSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StarsSectionHeaderView.h; path = CollapsableOptions/StarsSectionHeaderView.h; sourceTree = SOURCE_ROOT; };
+		500BB3E51D7F452A003CF6B9 /* StarsSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StarsSectionHeaderView.m; path = CollapsableOptions/StarsSectionHeaderView.m; sourceTree = SOURCE_ROOT; };
+		500BB3E61D7F452A003CF6B9 /* StarsSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StarsSectionHeaderView.xib; path = CollapsableOptions/StarsSectionHeaderView.xib; sourceTree = SOURCE_ROOT; };
+		500BB3E91D7F453B003CF6B9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CollapsableOptions/main.m; sourceTree = SOURCE_ROOT; };
 		5014C7301D796FF8000322FE /* CollapsableTableKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CollapsableTableKit.framework; path = Carthage/Build/iOS/CollapsableTableKit.framework; sourceTree = "<group>"; };
 		501C23E91C9EE7EB003E3666 /* MeterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MeterView.xib; path = CollapsableOptions/MeterView.xib; sourceTree = SOURCE_ROOT; };
-		501C23EC1C9EE864003E3666 /* MeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterView.h; sourceTree = SOURCE_ROOT; };
-		501C23ED1C9EE864003E3666 /* MeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeterView.m; sourceTree = SOURCE_ROOT; };
 		501C23F01C9EED32003E3666 /* ArrowSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrowSectionHeaderView.h; path = CollapsableOptions/ArrowSectionHeaderView.h; sourceTree = SOURCE_ROOT; };
 		501C23F11C9EED32003E3666 /* ArrowSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArrowSectionHeaderView.m; path = CollapsableOptions/ArrowSectionHeaderView.m; sourceTree = SOURCE_ROOT; };
 		501C23F21C9EED32003E3666 /* ArrowSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArrowSectionHeaderView.xib; path = CollapsableOptions/ArrowSectionHeaderView.xib; sourceTree = SOURCE_ROOT; };
-		501C23F51C9EEDFD003E3666 /* MeterSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeterSectionHeaderView.xib; sourceTree = SOURCE_ROOT; };
-		501C23F81C9EEE0F003E3666 /* MeterSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterSectionHeaderView.h; sourceTree = SOURCE_ROOT; };
-		501C23F91C9EEE0F003E3666 /* MeterSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeterSectionHeaderView.m; sourceTree = SOURCE_ROOT; };
-		501C24081C9F263C003E3666 /* UILabel+flash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+flash.h"; sourceTree = SOURCE_ROOT; };
-		501C24091C9F263C003E3666 /* UILabel+flash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+flash.m"; sourceTree = SOURCE_ROOT; };
-		501C240B1C9F27EE003E3666 /* StarsSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarsSectionHeaderView.xib; sourceTree = SOURCE_ROOT; };
-		501C240E1C9F27FD003E3666 /* StarsSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarsSectionHeaderView.h; sourceTree = SOURCE_ROOT; };
-		501C240F1C9F27FD003E3666 /* StarsSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarsSectionHeaderView.m; sourceTree = SOURCE_ROOT; };
 		503D30931C9DCDBE0001FF90 /* CollapsableOptions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollapsableOptions.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		503D30971C9DCDBE0001FF90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../CollapsableOptions/main.m; sourceTree = "<group>"; };
 		50F4907C1C9DD68C000CFB95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CollapsableOptions/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		50F4907E1C9DD68C000CFB95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CollapsableOptions/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		50F490811C9DD95D000CFB95 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CollapsableOptions/AppDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -144,8 +144,8 @@
 		501C23EB1C9EE85A003E3666 /* MeterView */ = {
 			isa = PBXGroup;
 			children = (
-				501C23EC1C9EE864003E3666 /* MeterView.h */,
-				501C23ED1C9EE864003E3666 /* MeterView.m */,
+				500BB3D91D7F4509003CF6B9 /* MeterView.h */,
+				500BB3DA1D7F4509003CF6B9 /* MeterView.m */,
 				501C23E91C9EE7EB003E3666 /* MeterView.xib */,
 			);
 			name = MeterView;
@@ -164,9 +164,9 @@
 		501C23F71C9EEE02003E3666 /* MeterSectionHeaderView */ = {
 			isa = PBXGroup;
 			children = (
-				501C23F81C9EEE0F003E3666 /* MeterSectionHeaderView.h */,
-				501C23F91C9EEE0F003E3666 /* MeterSectionHeaderView.m */,
-				501C23F51C9EEDFD003E3666 /* MeterSectionHeaderView.xib */,
+				500BB3DC1D7F4513003CF6B9 /* MeterSectionHeaderView.h */,
+				500BB3DD1D7F4513003CF6B9 /* MeterSectionHeaderView.m */,
+				500BB3DE1D7F4513003CF6B9 /* MeterSectionHeaderView.xib */,
 			);
 			name = MeterSectionHeaderView;
 			sourceTree = "<group>";
@@ -200,9 +200,9 @@
 		501C240D1C9F27F2003E3666 /* StarsSectionHeaderView */ = {
 			isa = PBXGroup;
 			children = (
-				501C240E1C9F27FD003E3666 /* StarsSectionHeaderView.h */,
-				501C240F1C9F27FD003E3666 /* StarsSectionHeaderView.m */,
-				501C240B1C9F27EE003E3666 /* StarsSectionHeaderView.xib */,
+				500BB3E41D7F452A003CF6B9 /* StarsSectionHeaderView.h */,
+				500BB3E51D7F452A003CF6B9 /* StarsSectionHeaderView.m */,
+				500BB3E61D7F452A003CF6B9 /* StarsSectionHeaderView.xib */,
 			);
 			name = StarsSectionHeaderView;
 			sourceTree = "<group>";
@@ -210,8 +210,8 @@
 		501C24111C9F285E003E3666 /* UILabel+flash */ = {
 			isa = PBXGroup;
 			children = (
-				501C24081C9F263C003E3666 /* UILabel+flash.h */,
-				501C24091C9F263C003E3666 /* UILabel+flash.m */,
+				500BB3E11D7F451F003CF6B9 /* UILabel+flash.h */,
+				500BB3E21D7F451F003CF6B9 /* UILabel+flash.m */,
 			);
 			name = "UILabel+flash";
 			sourceTree = "<group>";
@@ -261,7 +261,7 @@
 			children = (
 				50F490921C9DD99A000CFB95 /* Assets.xcassets */,
 				50F490941C9DD9A4000CFB95 /* Info.plist */,
-				503D30971C9DCDBE0001FF90 /* main.m */,
+				500BB3E91D7F453B003CF6B9 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -325,10 +325,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				501C23EA1C9EE7EB003E3666 /* MeterView.xib in Resources */,
-				501C240C1C9F27EE003E3666 /* StarsSectionHeaderView.xib in Resources */,
-				501C23F61C9EEDFD003E3666 /* MeterSectionHeaderView.xib in Resources */,
 				50F4907F1C9DD68C000CFB95 /* LaunchScreen.storyboard in Resources */,
 				50F490931C9DD99A000CFB95 /* Assets.xcassets in Resources */,
+				500BB3E81D7F452A003CF6B9 /* StarsSectionHeaderView.xib in Resources */,
+				500BB3E01D7F4513003CF6B9 /* MeterSectionHeaderView.xib in Resources */,
 				501C23F41C9EED32003E3666 /* ArrowSectionHeaderView.xib in Resources */,
 				50F490801C9DD68C000CFB95 /* Main.storyboard in Resources */,
 			);
@@ -341,16 +341,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				500BB3EA1D7F453B003CF6B9 /* main.m in Sources */,
 				50F490911C9DD98D000CFB95 /* ViewController.m in Sources */,
-				501C23FA1C9EEE0F003E3666 /* MeterSectionHeaderView.m in Sources */,
-				501C24101C9F27FD003E3666 /* StarsSectionHeaderView.m in Sources */,
+				500BB3E71D7F452A003CF6B9 /* StarsSectionHeaderView.m in Sources */,
 				50F490891C9DD975000CFB95 /* MenuSection.m in Sources */,
+				500BB3DB1D7F4509003CF6B9 /* MeterView.m in Sources */,
 				50F490861C9DD968000CFB95 /* FakeModelBuilder.m in Sources */,
-				501C23EE1C9EE864003E3666 /* MeterView.m in Sources */,
 				501C23F31C9EED32003E3666 /* ArrowSectionHeaderView.m in Sources */,
-				501C240A1C9F263C003E3666 /* UILabel+flash.m in Sources */,
 				50F490831C9DD95D000CFB95 /* AppDelegate.m in Sources */,
-				503D30981C9DCDBE0001FF90 /* main.m in Sources */,
+				500BB3E31D7F451F003CF6B9 /* UILabel+flash.m in Sources */,
+				500BB3DF1D7F4513003CF6B9 /* MeterSectionHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
