@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Robert Nash. All rights reserved.
 //
 
-#import <CollapsableTableKit/CollapsableTableKit.h>
+#import <CollapsableTableHeaders/CollapsableTableHeaders.h>
 
 @interface ViewController : RRNCollapsableTableViewController
 

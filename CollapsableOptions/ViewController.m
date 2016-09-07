@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "ArrowSectionHeaderView.h"
-#import "MeterSectionHeaderView.h"
 #import "FakeModelBuilder.h"
 
 @interface ViewController ()
@@ -26,6 +24,10 @@
 
 -(NSString *)sectionHeaderNibName {
     return [[NSProcessInfo processInfo] environment][@"SECTION_HEADER"];//Provided by scheme
+}
+
+-(NSBundle *)sectionHeaderNibBundle {
+    return [NSBundle bundleForClass:NSClassFromString([self sectionHeaderNibName])];
 }
 
 -(BOOL)singleOpenSelectionOnly {
