@@ -62,9 +62,9 @@ Subclass RRNTableViewHeaderFooterView and override the following methods. The fo
 
 ### Demo
 
-Run each of the supplied XCode schemes. Each of the demo schemes execute the 'example' target, which has a few dependencies. A `.resolved file` is included so execute `carthage bootsrap` within the project directory.
+Run each of the supplied XCode schemes.
 
-### Carthage
+### Installation
 
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
 
