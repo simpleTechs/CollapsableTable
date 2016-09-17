@@ -87,7 +87,7 @@ Then run `carthage update` to fetch and build the binary file. To incorporate th
 github "rob-nash/collapsabletable" == 1.0.0
 ```
 
-Official binary releases are declared within the [Releases](https://github.com/rob-nash/CollapsableTableKit/releases) tab.
+Official binary releases are declared within the [Releases](https://github.com/rob-nash/CollapsableTable/releases) tab.
 
 ### Usage
 1. Build a UITableView, either in code or from interface builder.
