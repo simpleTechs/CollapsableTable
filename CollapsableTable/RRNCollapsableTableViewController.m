@@ -28,6 +28,7 @@
 
 #import "RRNCollapsableTableViewController.h"
 #import "RRNConstants.h"
+#import "UITableView+rrn_extensions.h"
 
 @implementation RRNCollapsableTableViewController
 
@@ -49,6 +50,10 @@
 }
 
 -(BOOL)singleOpenSelectionOnly {
+    return NO;
+}
+
+-(BOOL)floatingHeaderViewSelectionEnabled {
     return NO;
 }
 
@@ -105,20 +110,46 @@
     [self userTappedView:view atPoint:point];
 }
 
+#define TABLE_VIEW_KEY @"keyTableView"
+#define TAPPED_SECTION_KEY @"keyTappedSection"
+#define SECTION_HEADER_VIEW_KEY @"keySectionHeaderView"
+
 -(void)userTappedView:(RRNTableViewHeaderFooterView *)view atPoint:(CGPoint)point {
     
     UITableView *tableView = [self collapsableTableView];
+
+    NSUInteger tappedSection = [tableView rrn_sectionForHeaderFooterView:view].integerValue;
     
-    NSNumber *value = [self sectionForUserSelectionInTableView:tableView
-                                               atTouchLocation:point
-                                            inHeaderFooterView:view];
+    BOOL isFloating = [tableView rrn_isFloatingHeaderInSection:tappedSection];
     
-    if (!value) {
-        return;
+    NSDictionary *package = @{
+                              TABLE_VIEW_KEY: tableView,
+                              TAPPED_SECTION_KEY: @(tappedSection),
+                              SECTION_HEADER_VIEW_KEY: view
+                              };
+    
+    if (isFloating && [self floatingHeaderViewSelectionEnabled]) {
+        CGRect frame = [tableView rectForHeaderInSection:tappedSection];
+        frame.origin.y -= tableView.contentInset.top;
+        [tableView setContentOffset:frame.origin animated:YES];
+        [self performSelector:@selector(collapse:) withObject:package afterDelay:0.3];
+    } else if (!isFloating) {
+        [self collapse:package];
     }
+
+}
+
+-(void)collapse:(NSDictionary *)package {
+    UITableView *tableView = package[TABLE_VIEW_KEY];
+    NSNumber *section = package[TAPPED_SECTION_KEY];
+    RRNTableViewHeaderFooterView *sectionHeaderView = package[SECTION_HEADER_VIEW_KEY];
+    [self collapse:tableView withView:sectionHeaderView inSection:section.integerValue];
+}
+
+-(void)collapse:(UITableView *)tableView withView:(RRNTableViewHeaderFooterView *)view inSection:(NSInteger)section {
     
-    NSUInteger tappedSection = value.integerValue;
-    
+    NSUInteger tappedSection = [tableView rrn_sectionForHeaderFooterView:view].integerValue;
+        
     [tableView beginUpdates];
     
     BOOL foundOpenUnchosenMenuSection = NO;
@@ -164,21 +195,6 @@
     
     [tableView endUpdates];
     
-}
-
--(NSNumber *)sectionForUserSelectionInTableView:(UITableView *)tableView atTouchLocation:(CGPoint)location inHeaderFooterView:(UITableViewHeaderFooterView *)view {
-    
-    CGPoint point = [tableView convertPoint:location
-                                   fromView:view];
-    
-    for (NSInteger i = 0; i < [tableView numberOfSections]; i++) {
-        CGRect rect = [tableView rectForHeaderInSection:i];
-        if (CGRectContainsPoint(rect, point)) {
-            return @(i);
-        }
-    }
-    
-    return nil;
 }
 
 -(void)toggleCollapseTableViewSectionAtSection:(NSUInteger)section

@@ -66,4 +66,10 @@
  */
 -(BOOL)singleOpenSelectionOnly;
 
+/*!
+ * @discussion Table view section headers are translated on the y axis, by UIKit, when the content offset of it's table view exceeds a threshold value. The translation moves the table header view over its corresponding section table view rows.
+ * @return a boolean indication that table header views will respond to a user selction when the header view being selected is in a floating state i.e. a state where the header view overlaps it's corresponding section table view rows. Is 'NO' by defualt.
+ */
+-(BOOL)floatingHeaderViewSelectionEnabled;
+
 @end
