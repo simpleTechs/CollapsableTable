@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		506029131DA7910E00FA6104 /* UITableView+rrn_extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 506029111DA7910E00FA6104 /* UITableView+rrn_extensions.h */; };
+		506029141DA7910E00FA6104 /* UITableView+rrn_extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 506029121DA7910E00FA6104 /* UITableView+rrn_extensions.m */; };
 		5099137A1D8C3D2C00D478AA /* CollapsableTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 509913781D8C3D2C00D478AA /* CollapsableTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		509913851D8C3D5600D478AA /* RRNCollapsableTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 509913801D8C3D5600D478AA /* RRNCollapsableTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		509913861D8C3D5600D478AA /* RRNCollapsableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509913811D8C3D5600D478AA /* RRNCollapsableTableViewController.m */; };
@@ -62,6 +64,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		506029111DA7910E00FA6104 /* UITableView+rrn_extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+rrn_extensions.h"; sourceTree = "<group>"; };
+		506029121DA7910E00FA6104 /* UITableView+rrn_extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+rrn_extensions.m"; sourceTree = "<group>"; };
 		509913751D8C3D2C00D478AA /* CollapsableTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CollapsableTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		509913781D8C3D2C00D478AA /* CollapsableTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollapsableTable.h; sourceTree = "<group>"; };
 		509913791D8C3D2C00D478AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,9 +144,11 @@
 			isa = PBXGroup;
 			children = (
 				509913781D8C3D2C00D478AA /* CollapsableTable.h */,
+				509913821D8C3D5600D478AA /* RRNConstants.h */,
 				509913801D8C3D5600D478AA /* RRNCollapsableTableViewController.h */,
 				509913811D8C3D5600D478AA /* RRNCollapsableTableViewController.m */,
-				509913821D8C3D5600D478AA /* RRNConstants.h */,
+				506029111DA7910E00FA6104 /* UITableView+rrn_extensions.h */,
+				506029121DA7910E00FA6104 /* UITableView+rrn_extensions.m */,
 				509913831D8C3D5600D478AA /* RRNTableViewHeaderFooterView.h */,
 				509913841D8C3D5600D478AA /* RRNTableViewHeaderFooterView.m */,
 				509913791D8C3D2C00D478AA /* Info.plist */,
@@ -263,6 +269,7 @@
 				509913AE1D8C3DFC00D478AA /* MenuSection.h in Headers */,
 				5099137A1D8C3D2C00D478AA /* CollapsableTable.h in Headers */,
 				509913B01D8C3DFC00D478AA /* ViewController.h in Headers */,
+				506029131DA7910E00FA6104 /* UITableView+rrn_extensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				506029141DA7910E00FA6104 /* UITableView+rrn_extensions.m in Sources */,
 				509913AD1D8C3DFC00D478AA /* FakeModelBuilder.m in Sources */,
 				509913861D8C3D5600D478AA /* RRNCollapsableTableViewController.m in Sources */,
 				509913AF1D8C3DFC00D478AA /* MenuSection.m in Sources */,
