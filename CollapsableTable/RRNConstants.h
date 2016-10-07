@@ -1,6 +1,6 @@
 //
 //  RRNConstants.h
-//  CollapsableTableKit
+//  CollapsableTable
 //
 //  Created by Robert Nash on 02/09/2016.
 //  Copyright © 2016 Robert Nash. All rights reserved.

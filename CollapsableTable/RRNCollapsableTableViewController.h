@@ -1,5 +1,5 @@
 /**
- *  CollapsableTableKit - Collapsable table view sections with custom section header views.
+ *  CollapsableTable - Collapsable table view sections with custom section header views.
  *
  *  RRNCollapsableTableViewController.h
  *
