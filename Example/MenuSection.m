@@ -14,4 +14,14 @@
 @synthesize isVisible = _isVisible;
 @synthesize items = _items;
 
+-(instancetype)initWithTitle:(NSString *)title withOptionVisible:(NSNumber *)isVisible withItems:(NSArray *)items {
+    self = [super init];
+    if (self) {
+        _title = title;
+        _isVisible = isVisible;
+        _items = items;
+    }
+    return self;
+}
+
 @end

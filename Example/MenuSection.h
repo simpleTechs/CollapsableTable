@@ -9,4 +9,7 @@
 #import <CollapsableTable/CollapsableTable.h>
 
 @interface MenuSection : NSObject <RRNCollapsableTableViewSectionModelProtocol>
+
+-(instancetype)initWithTitle:(NSString *)title withOptionVisible:(NSNumber *)isVisible withItems:(NSArray *)items;
+
 @end
